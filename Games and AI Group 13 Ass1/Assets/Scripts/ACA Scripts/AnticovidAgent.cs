@@ -19,10 +19,9 @@ public class AnticovidAgent : MonoBehaviour
     void Update()
     {
         lastPosition = player.transform.position;
-        print(lastPosition);
     }
 
-    void FixedUpdate()
+    private Vector2 SeekAndArrive()
     {
         Vector2 currentAntiCovidAgentPos = rb2d.position;
         Vector2 desiredVelocity = lastPosition - currentAntiCovidAgentPos;
@@ -34,7 +33,12 @@ public class AnticovidAgent : MonoBehaviour
         }
 
         desiredVelocity *= speedMultiplier;
-        Vector2 changeInVelocity = (desiredVelocity - rb2d.velocity);
+        return desiredVelocity;
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 changeInVelocity = (SeekAndArrive() - rb2d.velocity);
         rb2d.AddForce(changeInVelocity);
     }
 
