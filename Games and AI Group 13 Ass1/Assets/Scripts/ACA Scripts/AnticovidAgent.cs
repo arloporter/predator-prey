@@ -4,7 +4,7 @@ using UnityEngine;
 using Math;
 using Node;
 
-public class Map : MonoBehaviour
+public class AnticovidAgent : MonoBehaviour
 {
 
     public Transform start;
