@@ -2925,6 +2925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b10774fd3e2fc4488fce6cc9398aa3, type: 3}
+--- !u!1 &1533397783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+  m_PrefabInstance: {fileID: 824346778853650443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558494872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,7 +4407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Constraints
@@ -4477,6 +4482,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3900836097146954541, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1533397783}
     - target: {fileID: 7371181677399046546, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: player
       value: 
