@@ -15,7 +15,8 @@ public class UninfectedCivillian : MonoBehaviour
         }
 
         this.transform.position += velocity * Time.deltaTime;
-        this.transform.rotation = Quaternion.LookRotation(velocity);
+        // Rotation code could be handy if a proper model is implemented.
+        // this.transform.rotation = Quaternion.LookRotation(velocity);
     }
 
 
