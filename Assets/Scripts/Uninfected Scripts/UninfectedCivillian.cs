@@ -67,7 +67,7 @@ public class UninfectedCivillian : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 changeInVelocity = ((OffsetPursuit() * -1) - rb2d.velocity);
+        Vector2 changeInVelocity = (rb2d.velocity- (OffsetPursuit() * -1));
         Vector2 predictedChangeInVelocity = SeekAndArrive(changeInVelocity);
         rb2d.AddForce(predictedChangeInVelocity);
     }
