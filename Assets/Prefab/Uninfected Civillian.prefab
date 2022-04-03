@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444b3b6e69b11b947983a72d6ca44992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerSightDistance: 5
 --- !u!114 &2120697816829826690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,8 +114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eeac9b4362422043a5698c9bc290efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentVelocity: {x: 0, y: 0}
   detectionRadius: 2
   startVelocitySpeedAvg: 2
+  cohesionEnabled: 1
+  seperationEnabled: 1
+  alignmentEnabled: 1
   seperationRadius: 0
 --- !u!114 &6091485119625951302
 MonoBehaviour:
