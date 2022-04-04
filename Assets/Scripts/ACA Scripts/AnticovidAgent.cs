@@ -9,29 +9,31 @@ public class AnticovidAgent : MonoBehaviour
 {
     public float maxSizeX;
     public float maxSizeY;
-
     public float offset;
-    public Node[][] grid;
-    public List<Node> kdTree;
+    public List<List<Node>> grid;
     public float radius;
     public float maxVelocity;
     public Rigidbody2D player;
-
-
-    // public static RaycastHit2D CircleCast(Vector2 origin, float radius, Vector2 direction, float distance = Mathf.Infinity, 
-    //                             int layerMask = DefaultRaycastLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity);
-
+    public Rigidbody2D target;
+    private List<Vector2> finalPath;
+    public GameObject gridNode;
+    public GameObject gridRed;
+    public GameObject gridBlack;
+    private int count;
+    public LayerMask Collidables;
+    
     public void initialise()
     {
-        int xIndex = 0;
+        
         int yIndex = 0;
-        this.grid = new Node[900][];
+        this.grid = new List<List<Node>>();
         // from 0 to N rows
-        for (float y = 0; y < this.maxSizeY; y += this.offset)
+        for (float y = 0.0f; y < this.maxSizeY; y += this.offset)
         {
-
+            int xIndex = 0;
+            List<Node> row = new List<Node>();
             //from 0 to N columns
-            for (float x = 0; x < this.maxSizeX; x += this.offset)
+            for (float x = 0.0f; x < this.maxSizeX; x += this.offset)
             {
                 // establish a new node at this location
                 Node n = new Node(false, x, y);
@@ -40,8 +42,9 @@ public class AnticovidAgent : MonoBehaviour
 
                 // determine if there is a collider at point
                 Vector2 point = new Vector2(x, y);
-                Vector2 NullVector = new Vector2(0, 0);
-                if (Physics2D.CircleCast(point, this.radius, NullVector, 0.0f))
+                Vector2 NullVector = new Vector2(1, 1);
+                Collider2D collider = Physics2D.OverlapBox(point, new Vector2(0.5f, 0.5f), 0f, Collidables);
+                if (collider != null)
                 {
                     n.hasCollider = true;
                 }
@@ -49,22 +52,34 @@ public class AnticovidAgent : MonoBehaviour
                 {
                     n.hasCollider = false;
                 }
-                n.cost = 0;
+                
+
+                n.cost = 1;
                 // Assign to grid
-
-                this.grid[xIndex][yIndex] = n;
+                row.Add(n);
+                if(n.hasCollider == true)
+                {
+                    Instantiate(this.gridBlack, new Vector2(x, y), Quaternion.identity);
+                } else
+                {
+                    Instantiate(this.gridNode, new Vector2(x, y), Quaternion.identity);
+                }
+                
                 xIndex += 1;
-
             }
+            this.grid.Add(row);
             yIndex += 1;
         }
+        
     }
+
     // Math.floor(CurrentX/offset), Math.floor(currentY/offset).
     public Node findClosestNode(float x, float y)
     {
         int IndexX = (int)Math.Floor(x / this.offset);
         int IndexY = (int)Math.Floor(y / this.offset);
-        return this.grid[IndexX][IndexY];
+        Node closestNode = this.grid[IndexY][IndexX];
+        return closestNode;
     }
 
     public Vector2 transitionFunction(Node start, Node target)
@@ -75,35 +90,92 @@ public class AnticovidAgent : MonoBehaviour
         return velocity;
     }
 
-    public Node[] findNeighbors(Node node)
+    public List<Node> findNeighbors(Node node)
     {
-        Node up = grid[node.xMapIndex][node.yMapIndex + 1];
-        Node down = grid[node.xMapIndex][node.yMapIndex - 1];
-        Node left = grid[node.xMapIndex - 1][node.yMapIndex];
-        Node right = grid[node.xMapIndex + 1][node.yMapIndex];
-        Node upRight = grid[node.xMapIndex + 1][node.yMapIndex + 1];
-        Node upLeft = grid[node.xMapIndex - 1][node.yMapIndex + 1];
-        Node downRight = grid[node.xMapIndex + 1][node.yMapIndex - 1];
-        Node downLeft = grid[node.xMapIndex - 1][node.yMapIndex - 1];
-        up.parent = node;
-        up.action = transitionFunction(node, up);
-        down.parent = node;
-        down.action = transitionFunction(node, down);
-        left.parent = node;
-        left.action = transitionFunction(node, left);
-        right.parent = node;
-        right.action = transitionFunction(node, right);
-        upRight.parent = node;
-        upRight.action = transitionFunction(node, upRight);
-        upLeft.parent = node;
-        upLeft.action = transitionFunction(node, upLeft);
-        downRight.parent = node;
-        downRight.action = transitionFunction(node, downRight);
-        downLeft.parent = node;
-        downLeft.action = transitionFunction(node, downLeft);
+        List<Node> neighbors = new List<Node>();
+        if (node.yMapIndex < (this.maxSizeY-1))
+        {
+            Node up = this.grid[node.yMapIndex + 1][node.xMapIndex];
+            if (!up.hasCollider)
+            {
+                up.action = transitionFunction(node, up);
+                neighbors.Add(up);
+            }
+        }
 
-        return new Node[] { upLeft, up, upRight, left, right, downLeft, down, downRight };
+        if (node.yMapIndex > 0) 
+        {
+            Node down = this.grid[node.yMapIndex - 1][node.xMapIndex];
+            if (!down.hasCollider)
+            { 
+                down.action = transitionFunction(node, down);
+                neighbors.Add(down);
+            }
+        }
+
+        if(node.xMapIndex > 0)
+        {
+            Node left = this.grid[node.yMapIndex][node.xMapIndex - 1];
+            if (!left.hasCollider)
+            {
+                left.action = transitionFunction(node, left);
+                neighbors.Add(left);
+            }
+        }
+
+        if(node.xMapIndex < (this.maxSizeX-1))
+        {
+            Node right = this.grid[node.yMapIndex][node.xMapIndex + 1];
+            if (!right.hasCollider)
+            {
+                right.action = transitionFunction(node, right);
+                neighbors.Add(right);
+            }
+        }
+
+        if(node.xMapIndex < (this.maxSizeX-1) && node.yMapIndex < (this.maxSizeY-1))
+        {
+            Node upRight = this.grid[node.yMapIndex + 1][node.xMapIndex + 1];
+            if (!upRight.hasCollider)
+            {
+                upRight.action = transitionFunction(node, upRight);
+                neighbors.Add(upRight);
+            }
+        }
+
+        if(node.xMapIndex > 0 && node.yMapIndex < (this.maxSizeY-1))
+        {
+            Node upLeft = this.grid[node.yMapIndex + 1][node.xMapIndex - 1];
+            if (!upLeft.hasCollider)
+            {
+                upLeft.action = transitionFunction(node, upLeft);
+                neighbors.Add(upLeft);
+            }
+        }
+         
+        if(node.xMapIndex < (this.maxSizeX-1) && node.yMapIndex > 0)
+        {
+            Node downRight = this.grid[node.yMapIndex - 1][node.xMapIndex + 1];
+            if (!downRight.hasCollider)
+            {
+                downRight.action = transitionFunction(node, downRight);
+                neighbors.Add(downRight);
+            }
+        }
+        
+        if(node.xMapIndex > 0 && node.yMapIndex > 0)
+        {
+            Node downLeft = this.grid[node.yMapIndex - 1][node.xMapIndex - 1];
+            if (!downLeft.hasCollider)
+            {
+                downLeft.action = transitionFunction(node, downLeft);
+                neighbors.Add(downLeft);
+            }
+        }
+        
+        return neighbors;
     }
+
     /* OPEN = priority queue containing START
        CLOSED = empty set
         while lowest rank in OPEN is not the GOAL:
@@ -127,80 +199,96 @@ public class AnticovidAgent : MonoBehaviour
 
     public List<Vector2> AStarSearch(Vector2 Start, Vector2 Target, Rigidbody2D entity)
     {
-        List<Node> path = new List<Node>();
+        
         HashSet<Node> visited = new HashSet<Node>();
         PriorityQueue<Node> frontier = new PriorityQueue<Node>();
-        Node startNode = findClosestNode(Start.x, Start.y);
-        startNode.action = new Vector2(0, 0);
-        Vector2 startVector = new Vector2(startNode.X, startNode.Y);
-        Node targetNode = findClosestNode(Target.x, Target.y);
+        Node startNode = findClosestNode((float) Start.x, (float) Start.y);
+        startNode.cost = 0;
 
-        path.Add(startNode);
-        Node dummy = new Node(true, 3, 5);
-        dummy.heuristic = 0;
-        frontier.Enqueue(dummy);
+        Vector2 startVector = new Vector2(startNode.X, startNode.Y);
+        Vector2 position = entity.position;
+        Vector2 goToStart = startVector - entity.position;
+        startNode.action = goToStart;
+        Node targetNode = findClosestNode((float) Target.x, (float) Target.y);
         frontier.Enqueue(startNode);
+        Node current = startNode;
+        
+
         while (frontier.getList().Count > 0)
         {
-            Node current = frontier.Dequeue();
-            visited.Add(current);
-            path.Add(current);
-            if (current == targetNode)
-            {
-                Vector2 position = entity.position;
-                Vector2 goToStart = startVector - entity.position;
-                goToStart = goToStart - entity.velocity;
-                List<Vector2> actions = new List<Vector2>();
-                actions.Add(goToStart);
-                for (int i = 1; i < path.Count; i++)
+            
+            if (!visited.Contains(current)) {
+                visited.Add(current);
+                if ((current.xMapIndex == targetNode.xMapIndex) && (current.yMapIndex == targetNode.yMapIndex))
                 {
-                    actions.Add(path[i].action);
+                    List<Vector2> actions = new List<Vector2>();
+                    List<Node> nodes = new List<Node>();
+                    nodes.Add(targetNode);
+                    List<Node> path = this.reconstructPath(startNode, targetNode, nodes);
+                    path.Reverse();
+                    foreach (Node N in path)
+                    {
+                        actions.Add(N.action);
+                    }
                     return actions;
-                }
-            }
-            foreach (Node neighbor in findNeighbors(current))
-            {
-                if (neighbor.hasCollider == false &&
-                    !visited.Contains(neighbor)
-                    && !frontier.getList().Contains(neighbor))
-                {
-                    Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
-                    double distance = Math.Sqrt((Math.Pow((neighborVector.x - Target.x), 2) + Math.Pow((neighborVector.y - Target.y), 2)));
-                    neighbor.heuristic = distance;
-                    frontier.Enqueue(neighbor);
                 }
                 else
                 {
-                    continue;
-
-
+                    foreach (Node neighbor in findNeighbors(current))
+                    {
+                        
+                        if (!visited.Contains(neighbor) &&
+                            !frontier.getList().Contains(neighbor))
+                        {
+                            neighbor.cost = current.cost + 1;
+                            neighbor.parent = current;
+                            Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
+                            double distance = Math.Sqrt((Math.Pow((Target.x- neighborVector.x), 2) + Math.Pow((Target.y- neighborVector.y), 2)));
+                            neighbor.heuristic = -distance;
+                            frontier.Enqueue(neighbor);
+                        } 
+                    }
                 }
             }
+            current = frontier.Dequeue();
         }
-        return new List<Vector2>();
+        List<Vector2> failure = new List<Vector2>();
+        Debug.Log("failed");
+        return failure;
     }
+    
+    public List<Node> reconstructPath(Node startNode, Node targetNode, List<Node> finalPath)
+    {
+        finalPath.Add(targetNode);
+        while (targetNode.parent != startNode)
+        {
+            Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity);
+            finalPath.Add(targetNode.parent);
+            targetNode = targetNode.parent;
+        }
+        return finalPath;
 
 
-
-    // Start is called before the first frame update
-    void Start()
+    }
+    void Awake()
     {
         this.initialise();
+        this.finalPath = AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 maxSizeVector = new Vector2(maxSizeX, maxSizeY);
-        List<Vector2> finalPath = AStarSearch(this.player.transform.position, maxSizeVector, this.player);
-        if (finalPath.Count > 0)
+        this.count += 1;
+        if (this.finalPath.Count > 0)
         {
-            foreach (Vector3 action in finalPath)
-            {
-                this.player.AddForce(action);
-            }
-
+            this.player.AddForce(-this.finalPath[0]);
         }
+        if (this.count%20 == 0)
+        {
+            this.finalPath = AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
+        }
+      
     }
 }
 // https://www.youtube.com/watch?v=AKKpPmxx07w
