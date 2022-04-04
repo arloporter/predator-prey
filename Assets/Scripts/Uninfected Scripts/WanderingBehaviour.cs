@@ -6,6 +6,9 @@ public class WanderingBehaviour : MonoBehaviour
 {
     public Vector2 currentVelocity;
 
+    // public float maxVelocity;
+    // public float minVelocity;
+
     public float detectionRadius = 2f;
     public float startVelocitySpeedAvg = 2f;
 
@@ -74,6 +77,25 @@ public class WanderingBehaviour : MonoBehaviour
 
     void cohesion(Rigidbody2D[] nearbyUninfectedRB)
     {
+        Vector2 currentTransform = this.transform.position;
+
+        int transformAmnt = 1;
+
+        for (int i = 0; i < nearbyUninfectedRB.Length; i++)
+        {
+            if (nearbyUninfectedRB[i] != null)
+            {
+                currentTransform.x += nearbyUninfectedRB[i].transform.position.x;
+                currentTransform.y += nearbyUninfectedRB[i].transform.position.y;
+                transformAmnt++;
+            }
+        }
+        print(currentTransform);
+        currentTransform /= transformAmnt;
+
+        print(currentTransform); // DEBUG
+
+        
 
     }
 
@@ -101,7 +123,7 @@ public class WanderingBehaviour : MonoBehaviour
 
     void alignment(Rigidbody2D[] nearbyUninfectedRB)
     {
-        Vector2 currentVelocity = rb.velocity;
+        // Vector2 currentVelocity = rb.velocity;
         Vector2 avgVelocity = Vector2.zero;
 
         int velocityAmnt = 0;
@@ -114,10 +136,11 @@ public class WanderingBehaviour : MonoBehaviour
                 velocityAmnt++;
             }
         }
-        
+        avgVelocity /= velocityAmnt;
 
-        rb.velocity = avgVelocity / velocityAmnt;
-        // print(avgVelocity.normalized); // DEBUG
+        rb.velocity = (rb.velocity + avgVelocity) / 2;
+
+       
     }
 
     void Update()
@@ -129,7 +152,15 @@ public class WanderingBehaviour : MonoBehaviour
             // print(nearbyUninfected); // DEBUG
         }
 
-        // currentVelocity = rb.velocity; // DEBUG
+        /*
+        float velocityX = Mathf.Clamp(rb.velocity.x, minVelocity, maxVelocity);
+        float velocityY = Mathf.Clamp(rb.velocity.y, minVelocity, maxVelocity);
+
+        rb.velocity = new Vector2(velocityX, velocityY);
+        */
+
+
+        currentVelocity = rb.velocity; // DEBUG
 
     }
 }
