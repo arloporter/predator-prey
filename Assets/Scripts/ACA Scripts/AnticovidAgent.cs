@@ -16,9 +16,7 @@ public class AnticovidAgent : MonoBehaviour
     public float radius;
     public float maxVelocity;
     public Rigidbody2D player;
-    private float MAX_SEE_AHEAD;
-    private float ahead;
-    private float ahead2;
+    
     // public static RaycastHit2D CircleCast(Vector2 origin, float radius, Vector2 direction, float distance = Mathf.Infinity, 
     //                             int layerMask = DefaultRaycastLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity);
 
