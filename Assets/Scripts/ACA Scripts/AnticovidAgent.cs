@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +11,10 @@ public class AnticovidAgent : MonoBehaviour
     public float maxSizeY;
     public float offset;
     public List<List<Node>> grid;
-    public float radius;
-    public float maxVelocity;
     public Rigidbody2D player;
     public Rigidbody2D target;
     private List<Vector2> finalPath;
+
     public GameObject gridNode;
     public GameObject gridRed;
     public GameObject gridBlack;
@@ -57,14 +56,14 @@ public class AnticovidAgent : MonoBehaviour
                 n.cost = 1;
                 // Assign to grid
                 row.Add(n);
-                if(n.hasCollider == true)
+                /*if(n.hasCollider == true)
                 {
                     Instantiate(this.gridBlack, new Vector2(x, y), Quaternion.identity);
                 } else
                 {
                     Instantiate(this.gridNode, new Vector2(x, y), Quaternion.identity);
                 }
-                
+                */
                 xIndex += 1;
             }
             this.grid.Add(row);
@@ -76,8 +75,8 @@ public class AnticovidAgent : MonoBehaviour
     // Math.floor(CurrentX/offset), Math.floor(currentY/offset).
     public Node findClosestNode(float x, float y)
     {
-        int IndexX = (int)Math.Floor(x / this.offset);
-        int IndexY = (int)Math.Floor(y / this.offset);
+        int IndexX = (int)Math.Floor(x / this.offset)+1;
+        int IndexY = (int)Math.Floor(y / this.offset)+1;
         Node closestNode = this.grid[IndexY][IndexX];
         return closestNode;
     }
@@ -197,7 +196,7 @@ public class AnticovidAgent : MonoBehaviour
         https://theory.stanford.edu/~amitp/GameProgramming/ImplementationNotes.html
     */
 
-    public List<Vector2> AStarSearch(Vector2 Start, Vector2 Target, Rigidbody2D entity)
+    public void AStarSearch(Vector2 Start, Vector2 Target, Rigidbody2D entity)
     {
         
         HashSet<Node> visited = new HashSet<Node>();
@@ -216,35 +215,31 @@ public class AnticovidAgent : MonoBehaviour
 
         while (frontier.getList().Count > 0)
         {
-            
             if (!visited.Contains(current)) {
                 visited.Add(current);
                 if ((current.xMapIndex == targetNode.xMapIndex) && (current.yMapIndex == targetNode.yMapIndex))
                 {
-                    List<Vector2> actions = new List<Vector2>();
-                    List<Node> nodes = new List<Node>();
-                    nodes.Add(targetNode);
-                    List<Node> path = this.reconstructPath(startNode, targetNode, nodes);
-                    path.Reverse();
-                    foreach (Node N in path)
-                    {
-                        actions.Add(N.action);
-                    }
-                    return actions;
+                    this.reconstructPath(startNode, targetNode);
+                    break;
                 }
                 else
                 {
                     foreach (Node neighbor in findNeighbors(current))
                     {
-                        
                         if (!visited.Contains(neighbor) &&
                             !frontier.getList().Contains(neighbor))
                         {
+                            neighbor.cost = 1;
                             neighbor.cost = current.cost + 1;
                             neighbor.parent = current;
                             Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
-                            double distance = Math.Sqrt((Math.Pow((Target.x- neighborVector.x), 2) + Math.Pow((Target.y- neighborVector.y), 2)));
-                            neighbor.heuristic = -distance;
+                            //Instantiate(this.gridRed, new Vector2(neighbor.X, neighbor.Y), Quaternion.identity);
+                            // Euclidean
+                            double distance = Math.Sqrt((Math.Pow((neighborVector.x - Target.x), 2) + Math.Pow((neighborVector.y- Target.y), 2)));
+                            
+                            // manhattan
+                            //double distance = Math.Abs(neighborVector.x - Target.x) + Math.Abs(neighborVector.y - Target.y);
+                            neighbor.heuristic = distance;
                             frontier.Enqueue(neighbor);
                         } 
                     }
@@ -252,44 +247,58 @@ public class AnticovidAgent : MonoBehaviour
             }
             current = frontier.Dequeue();
         }
-        List<Vector2> failure = new List<Vector2>();
         Debug.Log("failed");
-        return failure;
+        
     }
     
-    public List<Node> reconstructPath(Node startNode, Node targetNode, List<Node> finalPath)
+    public void reconstructPath(Node startNode, Node targetNode)
     {
-        finalPath.Add(targetNode);
+        finalPath = new List<Vector2>();
+        finalPath.Add(new Vector2(targetNode.X, targetNode.Y));
         while (targetNode.parent != startNode)
         {
-            Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity);
-            finalPath.Add(targetNode.parent);
+            finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
             targetNode = targetNode.parent;
         }
-        return finalPath;
-
+        finalPath.Reverse();
+        this.finalPath = finalPath;
 
     }
     void Awake()
     {
         this.initialise();
-        this.finalPath = AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
+        AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         this.count += 1;
-        if (this.finalPath.Count > 0)
+        if (this.count % 20 == 0)
         {
-            this.player.AddForce(-this.finalPath[0]);
+            AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
-        if (this.count%20 == 0)
+
+        if (finalPath.Count > 0)
         {
-            this.finalPath = AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
+            Vector2 nextWaypoint = finalPath[0];
+            Vector2 desiredVel = nextWaypoint - (Vector2)this.player.transform.position;
+
+            float dist = desiredVel.magnitude;
+
+            desiredVel.Normalize();
+            desiredVel = desiredVel * 5.0f; // Change to max speed
+            Vector2 force = desiredVel - this.player.velocity;
+            this.player.AddForce(force);
+
+            if (dist < 0.3f)
+            {
+                finalPath.RemoveAt(0);
+            }
         }
-      
+
     }
 }
+
 // https://www.youtube.com/watch?v=AKKpPmxx07w
 //https://docs.unity3d.com/ScriptReference/Physics.CheckSphere.html
