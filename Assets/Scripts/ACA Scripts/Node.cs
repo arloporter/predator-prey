@@ -34,9 +34,9 @@ public class Node : IComparable<Node>
         }
         else if (this.priority > n.priority)
         {
-            return -1;
+            return 1;
         }
-        return 1;
+        return -1;
     }
     public int Compare(Node x, Node y)
     {
