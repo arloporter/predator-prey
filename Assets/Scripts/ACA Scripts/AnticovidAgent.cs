@@ -181,43 +181,7 @@ public class AnticovidAgent : MonoBehaviour
         return new List<Vector2>();
     }
 
-    public void collisionAvoidance() :Vector {
-      ahead = position + normalize(velocity) * MAX_SEE_AHEAD; // calculate ahead vector
-      ahead2 = position + normalize(velocity) * MAX_SEE_AHEAD * 0.5; // calculate ahead2 vector
- 
-      var mostThreatening :Obstacle = findObstacle();
-      var avoidance :Vector3D = new Vector3D(0, 0, 0);
- 
-      if (mostThreatening != null) {
-          avoidance.x = ahead.x - mostThreatening.center.x;
-          avoidance.y = ahead.y - mostThreatening.center.y;
- 
-          avoidance.normalize();
-          avoidance.scaleBy(MAX_AVOID_FORCE); // invalid avoidance force
-      } else
-       {
-         avoidance.scaleBy(0); 
-      }
-
-     return avoidance;
-    }
- 
-    public void findObstacle() :Obstacle{
-
-    var mostThreateningObstacle :Obstacle = null;
-
-    for (var i:int = 0; i < Game.instance.obstacles.length; i++) {
-        var obstacle :Obstacle = Game.instance.obstacles[i];
-        var collision :Boolean = lineIntersecsCircle(ahead, ahead2, obstacle);
-
-        // "position" is the character's current position
-        if (collision && (mostThreateningObstacle == null || distance(position, obstacle) < distance(position, mostThreateningObstacle)))
-        {
-            mostThreateningObstacle = obstacle;
-        }
-    }
-    return mostThreatening;
-}
+    
 
 // Start is called before the first frame update
 void Start()
