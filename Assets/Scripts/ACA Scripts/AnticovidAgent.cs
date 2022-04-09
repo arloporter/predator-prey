@@ -59,11 +59,7 @@ public class AnticovidAgent : MonoBehaviour
                     n.hasCollider = false;
                     n.cost = 1;
                 }
-                Collider2D CostCollider = Physics2D.OverlapBox(point, new Vector2(0.5f, 0.5f), 0f, this.Costmap);
-                if (CostCollider != null)
-                {
-                    n.cost = 5;
-                }
+                
 
                 // Assign to grid
                 row.Add(n);
@@ -247,6 +243,11 @@ public class AnticovidAgent : MonoBehaviour
                             !frontier.getList().Contains(neighbor))
                         {
                             neighbor.cost = current.cost +1;
+                            Collider2D CostCollider = Physics2D.OverlapBox(new Vector2(neighbor.X, neighbor.Y), new Vector2(0.5f, 0.5f), 0f, this.Costmap);
+                            if (CostCollider != null)
+                            {
+                                neighbor.cost = current.cost + 5;
+                            }
                             neighbor.parent = current;
                             Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
                             
