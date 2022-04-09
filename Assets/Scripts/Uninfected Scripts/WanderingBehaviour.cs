@@ -22,14 +22,18 @@ public class WanderingBehaviour : MonoBehaviour
 
     // Enable/Disable Boids functions
     public bool cohesionEnabled = true;
+    public float cohesionStrength = 1;
     public bool seperationEnabled = true;
+    public float seperationStrength = 1;
     public bool alignmentEnabled = true;
+    public float alignmentDelay = 1; // How many runs that delay alignment, this is design to smooth out the alignment process instead of being rigid.
 
 
 
     // Interval between code checks
     private int interval = 3;
     private Rigidbody2D rb;
+    private int alignmentInterval = 0;
 
     void Start()
     {
@@ -80,9 +84,13 @@ public class WanderingBehaviour : MonoBehaviour
             {
                 seperation(otherrb2D, seperationRadius);
             }
-            if (alignmentEnabled == true && nearbyUninfected > 0)
+            if (alignmentEnabled == true && nearbyUninfected > 0 && alignmentInterval >= alignmentDelay)
             {
                 alignment(otherrb2D);
+                alignmentInterval = 0;
+            } else
+            {
+                alignmentInterval++;
             }
         }
         
@@ -112,11 +120,12 @@ public class WanderingBehaviour : MonoBehaviour
 
         // Then we calculate the central direction by the classic direction calculation of Vector A - Vector B and then normalizing to get a direction.
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
+        float centreDirectionDistance = centreDirection.magnitude; // Decrease power of forceadd as it gets closer to it's destination
         testObject.transform.position = avgTransform; // DEBUG
         // print(centreDirection.normalized); // DEBUG
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce(centreDirection.normalized);
+        rb.AddForce((centreDirection.normalized * centreDirectionDistance)* cohesionStrength);
 
     }
 
@@ -131,10 +140,10 @@ public class WanderingBehaviour : MonoBehaviour
                 Vector2 movingtowards = rb.position - nearbyUninfectedRB[i].position;
                 float distance = movingtowards.magnitude;
                 Vector2 direction = movingtowards / distance;
-                if (distance < seperationRadius)
-                {
-                    rb.AddForce(direction);
-                }
+                // if (distance < seperationRadius)
+                // {
+                rb.AddForce((direction.normalized / distance) * seperationStrength);
+                // }
             }
         }
     }
