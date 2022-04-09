@@ -22,6 +22,7 @@ public class AnticovidAgent : MonoBehaviour
     public GameObject gridBlack;
     private int count;
     public LayerMask Collidables;
+    public LayerMask Costmap;
     
     // maps bottom left corner must start at 0,0.
     // starting at 0,0 creates a grid with offset-spaced nodes.
@@ -51,14 +52,19 @@ public class AnticovidAgent : MonoBehaviour
                 if (collider != null)
                 {
                     n.hasCollider = true;
+                    
                 }
                 else
                 {
                     n.hasCollider = false;
+                    n.cost = 1;
                 }
-                
+                Collider2D CostCollider = Physics2D.OverlapBox(point, new Vector2(0.5f, 0.5f), 0f, this.Costmap);
+                if (CostCollider != null)
+                {
+                    n.cost = 5;
+                }
 
-                n.cost = 1;
                 // Assign to grid
                 row.Add(n);
 
@@ -240,8 +246,7 @@ public class AnticovidAgent : MonoBehaviour
                         if (!visited.Contains(neighbor) &&
                             !frontier.getList().Contains(neighbor))
                         {
-                            neighbor.cost = 1;
-                            neighbor.cost = current.cost + 1;
+                            neighbor.cost = current.cost +1;
                             neighbor.parent = current;
                             Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
                             
@@ -271,6 +276,7 @@ public class AnticovidAgent : MonoBehaviour
         {
             
             finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
+            Destroy(Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity), 0.5f);
             targetNode = targetNode.parent;
         }
         finalPath.Reverse();
@@ -323,7 +329,7 @@ public class AnticovidAgent : MonoBehaviour
             desiredVel = desiredVel * this.maxSpeed; // Change to max speed
             Vector2 force = desiredVel - this.player.velocity;
             this.player.AddForce(force);
-            Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
+            //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
             if (dist < 0.3f && smoothedPath.Count > 0)
             {
                 smoothedPath.RemoveAt(0);
