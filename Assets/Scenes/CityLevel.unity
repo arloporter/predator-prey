@@ -14226,6 +14226,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
   m_PrefabInstance: {fileID: 824346778853650443}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1533397788 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 824346779622391637, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+  m_PrefabInstance: {fileID: 824346778853650443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541346756
 GameObject:
   m_ObjectHideFlags: 0
@@ -19524,11 +19529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19571,6 +19576,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391637, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
+    - target: {fileID: 824346779622391637, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
@@ -19580,8 +19589,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: moveSpeed
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: spriteAnimation
+      value: 
+      objectReference: {fileID: 1533397788}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c694df29c675e948a96e5f023d19570, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 734a535981ca9c94f8c38343b2e2bd7e, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a2967d5169ff7245a5bc3ec3ecb85e2, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a6b9c216f64bba478b46291b2109779, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e1ac9da1b41fef74885097eb4e5978ff, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 096fff8fb207d1f469acb41f9ab350e3, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
+    - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: sprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8dcb54d676a965a4ebb12b2ff97b19c4, type: 3}
     - target: {fileID: 824346779622391658, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LinearDrag
       value: 5
@@ -19589,6 +19638,18 @@ PrefabInstance:
     - target: {fileID: 824346779622391658, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391659, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391659, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391659, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5372255710025640820, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: scoreIncrementText
@@ -20890,5 +20951,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7371181677399046546, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
