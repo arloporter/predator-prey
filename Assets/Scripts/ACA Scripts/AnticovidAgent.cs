@@ -6,10 +6,12 @@ using static Node;
 using static PriorityQueue<Node>;
 
 public class AnticovidAgent : MonoBehaviour
+
 {
     public float maxSizeX;
     public float maxSizeY;
     public float offset;
+    public float maxSpeed;
     public List<List<Node>> grid;
     public Rigidbody2D player;
     public Rigidbody2D target;
@@ -21,6 +23,9 @@ public class AnticovidAgent : MonoBehaviour
     private int count;
     public LayerMask Collidables;
     
+    // maps bottom left corner must start at 0,0.
+    // starting at 0,0 creates a grid with offset-spaced nodes.
+
     public void initialise()
     {
         
@@ -56,6 +61,8 @@ public class AnticovidAgent : MonoBehaviour
                 n.cost = 1;
                 // Assign to grid
                 row.Add(n);
+
+                // uncomment to visualize grid
                 /*if(n.hasCollider == true)
                 {
                     Instantiate(this.gridBlack, new Vector2(x, y), Quaternion.identity);
@@ -72,14 +79,15 @@ public class AnticovidAgent : MonoBehaviour
         
     }
 
-    // Math.floor(CurrentX/offset), Math.floor(currentY/offset).
+    // deduce the index from coordinate/offset
     public Node findClosestNode(float x, float y)
     {
-        int IndexX = (int)Math.Floor(x / this.offset)+1;
-        int IndexY = (int)Math.Floor(y / this.offset)+1;
+        int IndexX = (int)Math.Floor(x / this.offset);
+        int IndexY = (int)Math.Floor(y / this.offset);
         Node closestNode = this.grid[IndexY][IndexX];
         return closestNode;
     }
+
 
     public Vector2 transitionFunction(Node start, Node target)
     {
@@ -89,6 +97,8 @@ public class AnticovidAgent : MonoBehaviour
         return velocity;
     }
 
+    // find neighboring nodes from self.grid and store action required to get to them as action attribute
+    // returns list of neighbors
     public List<Node> findNeighbors(Node node)
     {
         List<Node> neighbors = new List<Node>();
@@ -217,6 +227,7 @@ public class AnticovidAgent : MonoBehaviour
         {
             if (!visited.Contains(current)) {
                 visited.Add(current);
+                
                 if ((current.xMapIndex == targetNode.xMapIndex) && (current.yMapIndex == targetNode.yMapIndex))
                 {
                     this.reconstructPath(startNode, targetNode);
@@ -233,7 +244,8 @@ public class AnticovidAgent : MonoBehaviour
                             neighbor.cost = current.cost + 1;
                             neighbor.parent = current;
                             Vector2 neighborVector = new Vector2(neighbor.X, neighbor.Y);
-                            //Instantiate(this.gridRed, new Vector2(neighbor.X, neighbor.Y), Quaternion.identity);
+                            
+
                             // Euclidean
                             double distance = Math.Sqrt((Math.Pow((neighborVector.x - Target.x), 2) + Math.Pow((neighborVector.y- Target.y), 2)));
                             
@@ -257,6 +269,7 @@ public class AnticovidAgent : MonoBehaviour
         finalPath.Add(new Vector2(targetNode.X, targetNode.Y));
         while (targetNode.parent != startNode)
         {
+            
             finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
             targetNode = targetNode.parent;
         }
@@ -279,22 +292,49 @@ public class AnticovidAgent : MonoBehaviour
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
 
-        if (finalPath.Count > 0)
+        if (this.finalPath.Count > 0)
         {
+            List<Vector2> smoothedPath = new List<Vector2>();
+            for(int i = 1; i < this.finalPath.Count-1; i++) {
+                Vector2 circlecast = (Vector2)this.player.transform.position - this.finalPath[i];
+                float distance = (float) Math.Sqrt(Math.Pow((this.player.transform.position.x - this.finalPath[i].x), 2) + Math.Pow((this.player.transform.position.y - this.finalPath[i].y), 2));
+                RaycastHit2D hit = Physics2D.CircleCast(this.player.transform.position, 0.5f, circlecast, distance, this.Collidables);
+                if (hit.collider != null)
+                {
+                    Debug.Log("Hit");
+                    smoothedPath.Add(this.finalPath[i]);
+                } else if (hit.collider == null)
+                {
+                    Debug.Log("Clear");
+                    this.finalPath.RemoveAt(i);
+                   
+
+                    
+                }
+            }
             Vector2 nextWaypoint = finalPath[0];
+            if (smoothedPath.Count > 0)
+            {
+                nextWaypoint = smoothedPath[0];
+            } 
             Vector2 desiredVel = nextWaypoint - (Vector2)this.player.transform.position;
-
             float dist = desiredVel.magnitude;
-
             desiredVel.Normalize();
-            desiredVel = desiredVel * 5.0f; // Change to max speed
+            desiredVel = desiredVel * this.maxSpeed; // Change to max speed
             Vector2 force = desiredVel - this.player.velocity;
             this.player.AddForce(force);
-
-            if (dist < 0.3f)
+            Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
+            if (dist < 0.3f && smoothedPath.Count > 0)
+            {
+                smoothedPath.RemoveAt(0);
+            } else if (dist < 0.3f && smoothedPath.Count == 0)
             {
                 finalPath.RemoveAt(0);
             }
+           
+
+
+
         }
 
     }
