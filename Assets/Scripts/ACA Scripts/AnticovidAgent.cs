@@ -16,6 +16,8 @@ public class AnticovidAgent : MonoBehaviour
     public Rigidbody2D player;
     public Rigidbody2D target;
     private List<Vector2> finalPath;
+    public Sprite[] sprites;
+    private SpriteRenderer spriteAnimation;
 
     public GameObject gridNode;
     public GameObject gridRed;
@@ -298,6 +300,7 @@ public class AnticovidAgent : MonoBehaviour
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
+        this.spriteAnimation = GetComponent<SpriteRenderer>();
 
         if (this.finalPath.Count > 0)
         {
@@ -330,6 +333,39 @@ public class AnticovidAgent : MonoBehaviour
             desiredVel = desiredVel * this.maxSpeed; // Change to max speed
             Vector2 force = desiredVel - this.player.velocity;
             this.player.AddForce(force);
+            if(force.x > 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[5];
+            }
+            if (force.x < 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[4];
+            }
+            if (force.y > 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[1];
+            }
+            if (force.y < 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[6];
+            }
+            if (force.x > 0 && force.y > 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[2];
+            }
+            if (force.x < 0 && force.y > 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[0];
+            }
+            if (force.x > 0 && force.y < 0)
+            {
+                this.spriteAnimation.sprite = this.sprites[7];
+            }
+            if (force.x < 0 && force.y <0)
+            {
+                this.spriteAnimation.sprite = this.sprites[5];
+            }
+
             //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
             if (dist < 0.3f && smoothedPath.Count > 0)
             {
