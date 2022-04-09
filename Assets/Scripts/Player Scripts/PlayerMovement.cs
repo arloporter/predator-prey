@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rig;
     private PlayerInput playerInput;
-
+    public Sprite[] sprites;
+    public SpriteRenderer spriteAnimation;
     private float movementX;
     private float movementY;
 
@@ -35,5 +36,39 @@ public class PlayerMovement : MonoBehaviour
         Vector2 movement = new Vector2(movementX, movementY);
 
         rig.AddForce(movement * moveSpeed);
+        spriteAnimation = GetComponent<SpriteRenderer>();
+
+        if (movement.x > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[4];
+        }
+        if (movement.x < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[3];
+        }
+        if (movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[1];
+        }
+        if (movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[6];
+        }
+        if (movement.x > 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[2];
+        }
+        if (movement.x < 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[0];
+        }
+        if (movement.x > 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[7];
+        }
+        if (movement.x < 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[5];
+        }
     }
 }
