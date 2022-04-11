@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rig;
     private PlayerInput playerInput;
     public Sprite[] sprites;
-    public SpriteRenderer spriteAnimation;
+    private SpriteRenderer spriteAnimation;
     private float movementX;
     private float movementY;
 
@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
+        spriteAnimation = GetComponent<SpriteRenderer>();
     }
 
     void OnMove(InputValue movementValue)
@@ -30,13 +31,9 @@ public class PlayerMovement : MonoBehaviour
         movementY = movementVector.y;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void Update()
     {
-        Vector2 movement = new Vector2(movementX, movementY);
-
-        rig.AddForce(movement * moveSpeed);
-        spriteAnimation = GetComponent<SpriteRenderer>();
+        Vector2 movement = rig.velocity;
 
         if (movement.x > 0)
         {
@@ -70,5 +67,13 @@ public class PlayerMovement : MonoBehaviour
         {
             this.spriteAnimation.sprite = this.sprites[5];
         }
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Vector2 movement = new Vector2(movementX, movementY);
+
+        rig.AddForce(movement * moveSpeed);
     }
 }

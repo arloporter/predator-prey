@@ -627,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &45114464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13129,6 +13129,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1533397783}
+    - target: {fileID: 6091485119625951352, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14227,7 +14231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951352, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_RootOrder
@@ -18810,7 +18814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951352, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_RootOrder
@@ -23980,7 +23984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951352, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_RootOrder

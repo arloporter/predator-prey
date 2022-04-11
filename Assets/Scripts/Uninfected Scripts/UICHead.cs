@@ -9,6 +9,12 @@ public class UICHead : MonoBehaviour
     public float playerSightDistance; // The distance determined as the boid Seeing the player
     public float bufferDistance; // Designed as a deadzone so that the boid focuses on the Fleeing state rather than flip-flopping at equal numbers
 
+    public Sprite[] sprites;
+    private SpriteRenderer spriteAnimation;
+
+
+    private Rigidbody2D rig;
+
     // A simple Boolean to make the distance to return to wandering a bit bigger than the base sight radius
     private bool fleeBuffer;
     // Scripts are put here to be enabled/disabled to facilitate FSM
@@ -17,6 +23,7 @@ public class UICHead : MonoBehaviour
 
     private void Start()
     {
+        spriteAnimation = GetComponent<SpriteRenderer>();
         boidsBehaviour = GetComponent<WanderingBehaviour>();
         // GETCOMPONENT HERE
 
@@ -48,5 +55,42 @@ public class UICHead : MonoBehaviour
         }
         // The FSM state to Die is contained with the PlayerHead Script to facilitate with game scoring, for posterity, the code is a basic collider check and if the other trigger is a uninfectedCivillian
         // this civillian unit will "Die" as stated within the FSM
+
+
+
+        Vector2 movement = rig.velocity;
+
+        if (movement.x > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[4];
+        }
+        if (movement.x < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[3];
+        }
+        if (movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[1];
+        }
+        if (movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[6];
+        }
+        if (movement.x > 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[2];
+        }
+        if (movement.x < 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[0];
+        }
+        if (movement.x > 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[7];
+        }
+        if (movement.x < 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[5];
+        }
     }
 }
