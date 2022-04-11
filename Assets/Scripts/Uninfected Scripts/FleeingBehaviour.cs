@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UninfectedCivillian : MonoBehaviour
+public class FleeingBehaviour : MonoBehaviour
 {
     public float maxVelocity;
     public Vector3 velocity; // Public for testing Purposes

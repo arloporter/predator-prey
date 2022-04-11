@@ -19,14 +19,14 @@ public class UICHead : MonoBehaviour
     private bool fleeBuffer;
     // Scripts are put here to be enabled/disabled to facilitate FSM
     private MonoBehaviour boidsBehaviour;
-    // private MonoBehaviour ENTERSCRIPTNAME; PUT FLEE SCRIPT HERE
+    private MonoBehaviour fleeingBehaviour;
 
     private void Start()
     {
         spriteAnimation = GetComponent<SpriteRenderer>();
         rig = GetComponent<Rigidbody2D>();
         boidsBehaviour = GetComponent<WanderingBehaviour>();
-        // GETCOMPONENT HERE
+        fleeingBehaviour = GetComponent<FleeingBehaviour>();
 
     }
     // So, what will be done here is the Vector2 Magnitude calculation, determining the distance between both the player and the script owner(In this case the uninfected Civillian)
@@ -44,14 +44,14 @@ public class UICHead : MonoBehaviour
         if (distance < playerSightDistance && fleeBuffer == false) // FSM Transistion to Flee if the player gets too close
         {
             boidsBehaviour.enabled = false;
-            // FleeBehaviour = true
+            fleeingBehaviour.enabled = true;
             fleeBuffer = true;
         }
         // FSM Transition Check to Wander
         if (distance > bufferDistance && fleeBuffer == true)
         {
             boidsBehaviour.enabled = true;
-            // FleeBehaviour = false;
+            fleeingBehaviour.enabled = false;
             fleeBuffer = false;
         }
         // The FSM state to Die is contained with the PlayerHead Script to facilitate with game scoring, for posterity, the code is a basic collider check and if the other trigger is a uninfectedCivillian
