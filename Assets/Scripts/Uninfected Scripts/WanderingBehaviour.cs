@@ -50,7 +50,7 @@ public class WanderingBehaviour : MonoBehaviour
         // Instantiate checking how many nearby colliders/uninfected to go through the respective loops to develop the array of colliders that ARE boids.
         int nearbyColliders = 0;
         int nearbyUninfected = 0;
-        if(hitcolliders.Length > 1)
+        if (hitcolliders.Length > 1)
         {
             // Instantiate the array of rigidbody colliders.
             Rigidbody2D[] otherrb2D = new Rigidbody2D[hitcolliders.Length];
@@ -62,7 +62,7 @@ public class WanderingBehaviour : MonoBehaviour
                     // Puts the rigidbody into the new array.
                     otherrb2D[nearbyUninfected] = hitcolliders[nearbyColliders].GetComponent<Rigidbody2D>();
                     nearbyUninfected++;
-                }                    
+                }
                 nearbyColliders++;
             }
 
@@ -84,7 +84,7 @@ public class WanderingBehaviour : MonoBehaviour
                 alignmentInterval++;
             }
         }
-        
+
     }
 
     void cohesion(Rigidbody2D[] nearbyUninfectedRB)
@@ -92,7 +92,7 @@ public class WanderingBehaviour : MonoBehaviour
         // First vector2 is the current transform of the object
         Vector2 avgTransform = Vector2.zero;
 
-        // Starts at 1 since there is itself
+        // Starts at 0 since the boid is attempting to cohese with the nearby group not-including itself
         int transformAmnt = 0;
 
         // Goes through the array parsed in to get the average value of the transforms.
@@ -114,7 +114,7 @@ public class WanderingBehaviour : MonoBehaviour
         float centreDirectionDistance = centreDirection.magnitude; // Decrease power of forceadd as it gets closer to it's destination
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce((centreDirection.normalized * centreDirectionDistance)* cohesionStrength);
+        rb.AddForce((centreDirection.normalized * centreDirectionDistance) * cohesionStrength);
 
     }
 
@@ -122,9 +122,9 @@ public class WanderingBehaviour : MonoBehaviour
     {
         // Iterates through the array to calculate the distance between two units within the boids
         // and if the distance < seperationRadius then an opposite force is pushed against the boid to facilitate with seperation
-        for(int i = 0; i < nearbyUninfectedRB.Length; i++)
+        for (int i = 0; i < nearbyUninfectedRB.Length; i++)
         {
-            if(nearbyUninfectedRB[i] != null)
+            if (nearbyUninfectedRB[i] != null)
             {
                 Vector2 movingtowards = rb.position - nearbyUninfectedRB[i].position;
                 float distance = movingtowards.magnitude;
@@ -140,11 +140,11 @@ public class WanderingBehaviour : MonoBehaviour
     void alignment(Rigidbody2D[] nearbyUninfectedRB)
     {
         // Similar code to Cohesion, but gets the average of the velocitys to get an average direction vector
-        Vector2 avgVelocity = Vector2.zero;
+        Vector2 avgVelocity = rb.velocity;
 
-        int velocityAmnt = 0;
+        int velocityAmnt = 1;
 
-        for(int i = 0; i < nearbyUninfectedRB.Length; i++)
+        for (int i = 0; i < nearbyUninfectedRB.Length; i++)
         {
             if (nearbyUninfectedRB[i] != null)
             {
@@ -155,7 +155,7 @@ public class WanderingBehaviour : MonoBehaviour
         avgVelocity /= velocityAmnt;
 
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
-        rb.velocity = (rb.velocity + avgVelocity) / 2;
+        rb.velocity = avgVelocity;
 
     }
 

@@ -9,6 +9,7 @@ public class PlayerHead : MonoBehaviour
     public TextMeshProUGUI uninfectedAmountText;
     public GameObject gameOverMenu;
     public TextMeshProUGUI finalScoreText;
+    public GameObject victoryScreen;
 
 
     private int infectedCount;
@@ -28,6 +29,16 @@ public class PlayerHead : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    private void Update()
+    {
+        if (uninfectedLeft <= 0)
+        {
+            this.gameObject.SetActive(false);
+            victoryScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
 
     void SetCountText()
     {
