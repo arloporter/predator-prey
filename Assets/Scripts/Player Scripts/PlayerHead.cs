@@ -7,6 +7,8 @@ public class PlayerHead : MonoBehaviour
 {
     public TextMeshProUGUI scoreIncrementText;
     public TextMeshProUGUI uninfectedAmountText;
+    public GameObject gameOverMenu;
+    public TextMeshProUGUI finalScoreText;
 
 
     private int infectedCount;
@@ -46,7 +48,11 @@ public class PlayerHead : MonoBehaviour
         }
 
         if (other.gameObject.tag == "AntiCovidAgent")
+        {
             this.gameObject.SetActive(false);
-
+            gameOverMenu.SetActive(true);
+            finalScoreText.text = "Total Infected: " + infectedCount.ToString();
+            Time.timeScale = 0;
+        }
     }
 }
