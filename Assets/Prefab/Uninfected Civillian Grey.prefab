@@ -161,15 +161,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eeac9b4362422043a5698c9bc290efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 3
-  startVelocitySpeedAvg: 1
+  detectionRadius: 4
+  startVelocitySpeedAvg: 3
   seperationRadius: 1
   cohesionEnabled: 1
-  cohesionStrength: 1
+  cohesionStrength: 2
   seperationEnabled: 1
   seperationStrength: 1
   alignmentEnabled: 1
-  alignmentDelay: 1
+  alignmentDelay: 3
 --- !u!114 &6091485119625951302
 MonoBehaviour:
   m_ObjectHideFlags: 0

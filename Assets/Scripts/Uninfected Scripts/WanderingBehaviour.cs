@@ -90,10 +90,10 @@ public class WanderingBehaviour : MonoBehaviour
     void cohesion(Rigidbody2D[] nearbyUninfectedRB)
     {
         // First vector2 is the current transform of the object
-        Vector2 avgTransform = this.transform.position;
+        Vector2 avgTransform = Vector2.zero;
 
         // Starts at 1 since there is itself
-        int transformAmnt = 1;
+        int transformAmnt = 0;
 
         // Goes through the array parsed in to get the average value of the transforms.
         for (int i = 0; i < nearbyUninfectedRB.Length; i++)
@@ -140,9 +140,9 @@ public class WanderingBehaviour : MonoBehaviour
     void alignment(Rigidbody2D[] nearbyUninfectedRB)
     {
         // Similar code to Cohesion, but gets the average of the velocitys to get an average direction vector
-        Vector2 avgVelocity = rb.velocity;
+        Vector2 avgVelocity = Vector2.zero;
 
-        int velocityAmnt = 1;
+        int velocityAmnt = 0;
 
         for(int i = 0; i < nearbyUninfectedRB.Length; i++)
         {

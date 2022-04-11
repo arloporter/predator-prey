@@ -279,7 +279,7 @@ public class AnticovidAgent : MonoBehaviour
         {
             
             finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
-            Destroy(Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity), 0.5f);
+            // Destroy(Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity), 0.5f);
             targetNode = targetNode.parent;
         }
         finalPath.Reverse();
