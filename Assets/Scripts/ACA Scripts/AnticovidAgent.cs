@@ -296,7 +296,8 @@ public class AnticovidAgent : MonoBehaviour
     void FixedUpdate()
     {
         this.count += 1;
-        if (this.count % 20 == 0)
+        float distanceCheck = Vector2.Distance(this.player.transform.position, this.target.transform.position);
+        if (this.count % 20 == 0 && distanceCheck > 0.2f)
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }

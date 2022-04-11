@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class WanderingBehaviour : MonoBehaviour
 {
-    // DEBUG test velocity to see velocity of gameObject
-    public Vector2 currentVelocity;
-
-    // public float maxVelocity;
-    // public float minVelocity;
-
-    // DEBUG test object that shows the mid point between a group of boids
-    public GameObject testObject;
-
     // Detection radius to detect nearby boids
     public float detectionRadius = 3f;
     // Average starting velocity for the boid on instantiate/spawn
@@ -121,8 +112,6 @@ public class WanderingBehaviour : MonoBehaviour
         // Then we calculate the central direction by the classic direction calculation of Vector A - Vector B and then normalizing to get a direction.
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
         float centreDirectionDistance = centreDirection.magnitude; // Decrease power of forceadd as it gets closer to it's destination
-        testObject.transform.position = avgTransform; // DEBUG
-        // print(centreDirection.normalized); // DEBUG
 
         // Basic addforce based on the direction given, would like to improve
         rb.AddForce((centreDirection.normalized * centreDirectionDistance)* cohesionStrength);
@@ -170,7 +159,7 @@ public class WanderingBehaviour : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Efficiency Function, I don't think it's neccessary to call nearby colliders 60/144 times a second.
         if (Time.frameCount % interval == 0)
@@ -185,9 +174,6 @@ public class WanderingBehaviour : MonoBehaviour
 
         rb.velocity = new Vector2(velocityX, velocityY);
         */
-
-
-        currentVelocity = rb.velocity; // DEBUG
 
     }
 }
