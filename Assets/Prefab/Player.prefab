@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 824346779622391636}
   - component: {fileID: 824346779622391637}
+  - component: {fileID: 5372255710025640820}
   - component: {fileID: 824346779622391656}
   - component: {fileID: 824346779622391657}
   - component: {fileID: 824346779622391658}
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,6 +87,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5372255710025640820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824346779622391638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb42825e5ad8914cabe1da84b84a57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrementText: {fileID: 0}
+  uninfectedAmountText: {fileID: 0}
 --- !u!114 &824346779622391656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +114,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  sprites:
+  - {fileID: 21300000, guid: 8c694df29c675e948a96e5f023d19570, type: 3}
+  - {fileID: 21300000, guid: 734a535981ca9c94f8c38343b2e2bd7e, type: 3}
+  - {fileID: 21300000, guid: 7a2967d5169ff7245a5bc3ec3ecb85e2, type: 3}
+  - {fileID: 21300000, guid: 9a6b9c216f64bba478b46291b2109779, type: 3}
+  - {fileID: 21300000, guid: e1ac9da1b41fef74885097eb4e5978ff, type: 3}
+  - {fileID: 21300000, guid: 096fff8fb207d1f469acb41f9ab350e3, type: 3}
+  - {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
+  - {fileID: 21300000, guid: 8dcb54d676a965a4ebb12b2ff97b19c4, type: 3}
+  spriteAnimation: {fileID: 824346779622391637}
 --- !u!114 &824346779622391657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,5 +189,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.5, y: 1}
   m_Direction: 0

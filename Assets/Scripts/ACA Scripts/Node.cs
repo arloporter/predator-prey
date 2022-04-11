@@ -28,12 +28,7 @@ public class Node : IComparable<Node>
     {
         this.priority = this.cost + this.heuristic;
         n.priority = n.cost + n.heuristic;
-
-        if (this.priority < n.priority)
-        {
-            return -1;
-        }
-        else if (this.priority == n.priority)
+        if (this.priority == n.priority)
         {
             return 0;
         }
@@ -41,7 +36,21 @@ public class Node : IComparable<Node>
         {
             return 1;
         }
-        return 0;
+        return -1;
+    }
+    public int Compare(Node x, Node y)
+    {
+        x.priority = x.cost + x.heuristic;
+        y.priority = y.cost + y.heuristic;
+        if (x.priority == y.priority)
+        {
+            return 0;
+        }
+        else if (x.priority < y.priority)
+        {
+            return -1;
+        }
+        return 1;
     }
 
 }

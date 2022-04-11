@@ -50,14 +50,4 @@ public class UninfectedCivillian : MonoBehaviour
         rb2d.AddForce(changeInVelocity);
     }
 
-
-
-
-
-    // Basic Collider code for testing purposes
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-            this.gameObject.SetActive(false);
-    }
 }

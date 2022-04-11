@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rig;
     private PlayerInput playerInput;
-
+    public Sprite[] sprites;
+    private SpriteRenderer spriteAnimation;
     private float movementX;
     private float movementY;
 
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
+        spriteAnimation = GetComponent<SpriteRenderer>();
     }
 
     void OnMove(InputValue movementValue)
@@ -27,6 +29,44 @@ public class PlayerMovement : MonoBehaviour
 
         movementX = movementVector.x;
         movementY = movementVector.y;
+    }
+
+    private void Update()
+    {
+        Vector2 movement = rig.velocity;
+
+        if (movement.x > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[4];
+        }
+        if (movement.x < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[3];
+        }
+        if (movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[1];
+        }
+        if (movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[6];
+        }
+        if (movement.x > 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[2];
+        }
+        if (movement.x < 0 && movement.y > 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[0];
+        }
+        if (movement.x > 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[7];
+        }
+        if (movement.x < 0 && movement.y < 0)
+        {
+            this.spriteAnimation.sprite = this.sprites[5];
+        }
     }
 
     // Update is called once per frame
