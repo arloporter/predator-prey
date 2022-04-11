@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6091485119625951353}
   - component: {fileID: 6091485119625951354}
+  - component: {fileID: 6091485119625951303}
+  - component: {fileID: 6643547231658456895}
   - component: {fileID: 4340977142081038440}
   - component: {fileID: 2120697816829826690}
   - component: {fileID: 6091485119625951302}
-  - component: {fileID: 6091485119625951303}
-  - component: {fileID: 6091485119625951352}
   - component: {fileID: 3102296853135851088}
   m_Layer: 0
-  m_Name: Uninfected Civillian
+  m_Name: Uninfected Civillian Green
   m_TagString: uninfectedCivillian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6091485119625951355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.062031746, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 32f812045f9cc92448344cf51a4c4d7c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,6 +88,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &6091485119625951303
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091485119625951355}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &6643547231658456895
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091485119625951355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.3, y: 0.75}
+  m_Direction: 0
 --- !u!114 &4340977142081038440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +140,15 @@ MonoBehaviour:
   player: {fileID: 0}
   playerSightDistance: 5
   bufferDistance: 0
+  sprites:
+  - {fileID: 21300000, guid: 3f32f9da4fe526f43b783988007bd916, type: 3}
+  - {fileID: 21300000, guid: bd10212efb10d584ea89a257902fa3a9, type: 3}
+  - {fileID: 21300000, guid: 60ad76a0705d11642a1101a8e0a69ecd, type: 3}
+  - {fileID: 21300000, guid: bc8ddbacd308ea247b42198e234b3f47, type: 3}
+  - {fileID: 21300000, guid: 4ba3247828c0af346832cfdaea806493, type: 3}
+  - {fileID: 21300000, guid: 6473f3039cb81814e8dd7c63894d21ee, type: 3}
+  - {fileID: 21300000, guid: 32f812045f9cc92448344cf51a4c4d7c, type: 3}
+  - {fileID: 21300000, guid: 7f1c0d70e33e83c4686fe19164a69126, type: 3}
 --- !u!114 &2120697816829826690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,43 +186,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   player: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
   speedMultiplier: 0.1
---- !u!50 &6091485119625951303
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6091485119625951355}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &6091485119625951352
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6091485119625951355}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!120 &3102296853135851088
 LineRenderer:
   m_ObjectHideFlags: 0

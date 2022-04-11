@@ -24,6 +24,7 @@ public class UICHead : MonoBehaviour
     private void Start()
     {
         spriteAnimation = GetComponent<SpriteRenderer>();
+        rig = GetComponent<Rigidbody2D>();
         boidsBehaviour = GetComponent<WanderingBehaviour>();
         // GETCOMPONENT HERE
 
