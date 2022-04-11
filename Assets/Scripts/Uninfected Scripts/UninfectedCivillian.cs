@@ -25,51 +25,29 @@ public class UninfectedCivillian : MonoBehaviour
     {
         lastPosition = player.transform.position;
 
-        if (velocity.magnitude > maxVelocity)
-        {
-            velocity = velocity.normalized * maxVelocity;
-        }
-
-        this.transform.position += velocity * Time.deltaTime;
-        // Rotation code could be handy if a proper model is implemented.
-        // this.transform.rotation = Quaternion.LookRotation(velocity);
     }
 
-    private Vector2 SeekAndArrive(Vector2 target)
+    private Vector2 Flee(Vector2 target)
     {
-        Vector2 currentAntiCovidAgentPos = rb2d.position;
-        Vector2 desiredVelocity = target - currentAntiCovidAgentPos;
+        Vector2 unAffectedCivillians = rb2d.position;
+        Vector2 desiredVelocity = unAffectedCivillians - target;
+        desiredVelocity.Normalize();
 
-
-
-        if (desiredVelocity.magnitude < RADIUS_TO_START_SLOWING_DOWN_FROM)
-        {
-            desiredVelocity *= (desiredVelocity.magnitude / RADIUS_TO_START_SLOWING_DOWN_FROM);
-            print(desiredVelocity);
-        }
+        desiredVelocity *= RADIUS_TO_START_SLOWING_DOWN_FROM / desiredVelocity.magnitude;
 
 
 
         desiredVelocity *= speedMultiplier;
+        print("main dv" + desiredVelocity);
         return desiredVelocity;
-    }
-
-
-
-    private Vector2 OffsetPursuit()
-    {
-        Vector2 target = player.transform.position;
-        Vector2 prediction = player.transform.GetComponent<Rigidbody2D>().velocity * 2;
-        return (target + prediction);
     }
 
 
 
     void FixedUpdate()
     {
-        Vector2 changeInVelocity = (rb2d.velocity- (OffsetPursuit() * -1));
-        Vector2 predictedChangeInVelocity = SeekAndArrive(changeInVelocity);
-        rb2d.AddForce(predictedChangeInVelocity);
+        Vector2 changeInVelocity = Flee(player.transform.position);
+        rb2d.AddForce(changeInVelocity);
     }
 
 
