@@ -16,6 +16,7 @@ public class ACAHead : MonoBehaviour
     // Component list
     private MonoBehaviour pathfindingBehaviour;
     private MonoBehaviour steeringPursuitBehaviour;
+    private MonoBehaviour obstacleAvoidance;
     private Rigidbody2D rb;
 
     private void Start()
@@ -23,6 +24,7 @@ public class ACAHead : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pathfindingBehaviour = GetComponent<AnticovidAgent>();
         steeringPursuitBehaviour = GetComponent<ACASteerPursuit>();
+        obstacleAvoidance = GetComponent<ObstacleAvoidance2>();
         spriteAnimation = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -38,6 +40,7 @@ public class ACAHead : MonoBehaviour
         {
             pathfindingBehaviour.enabled = false;
             steeringPursuitBehaviour.enabled = true;
+            obstacleAvoidance.enabled = true;
             pursuitBuffer = true;
         }
         
@@ -45,6 +48,7 @@ public class ACAHead : MonoBehaviour
         {
             pathfindingBehaviour.enabled = true;
             steeringPursuitBehaviour.enabled = false;
+            obstacleAvoidance.enabled = false;
             pursuitBuffer=false;
         }
 

@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreIncrementText: {fileID: 0}
   uninfectedAmountText: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  finalScoreText: {fileID: 0}
+  victoryScreen: {fileID: 0}
 --- !u!114 &824346779622391656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +126,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 096fff8fb207d1f469acb41f9ab350e3, type: 3}
   - {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
   - {fileID: 21300000, guid: 8dcb54d676a965a4ebb12b2ff97b19c4, type: 3}
-  spriteAnimation: {fileID: 824346779622391637}
 --- !u!114 &824346779622391657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,5 +191,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 0.33, y: 0.75}
   m_Direction: 0

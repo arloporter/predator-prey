@@ -24,7 +24,9 @@ public class ObstacleAvoidance2 : MonoBehaviour
         if(hit.collider != null)
         {
             Vector2 collidable = (Vector2)player.transform.position - hit.point;
-            player.AddForce(collidable.normalized * antiColliderStrength);
+            float distance = collidable.magnitude;
+            float distancePower = 1 / distance;
+            player.AddForce((collidable.normalized * distancePower) * antiColliderStrength);
         }
         else if (hit.collider == null)
         {
