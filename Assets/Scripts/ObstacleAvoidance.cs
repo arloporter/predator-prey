@@ -5,7 +5,7 @@ using static UnityEngine.Mathf;
 
 public class ObstacleAvoidance : MonoBehaviour
 {
-    public Rigidbody2D player;
+    private Rigidbody2D player;
     public LayerMask Collidables;
 
     public void Start()

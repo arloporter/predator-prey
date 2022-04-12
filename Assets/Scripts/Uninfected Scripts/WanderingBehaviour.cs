@@ -111,10 +111,9 @@ public class WanderingBehaviour : MonoBehaviour
 
         // Then we calculate the central direction by the classic direction calculation of Vector A - Vector B and then normalizing to get a direction.
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
-        float centreDirectionDistance = centreDirection.magnitude; // Decrease power of forceadd as it gets closer to it's destination
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce((centreDirection.normalized * centreDirectionDistance) * cohesionStrength);
+        rb.AddForce(centreDirection.normalized * cohesionStrength);
 
     }
 
@@ -128,11 +127,10 @@ public class WanderingBehaviour : MonoBehaviour
             {
                 Vector2 movingtowards = rb.position - nearbyUninfectedRB[i].position;
                 float distance = movingtowards.magnitude;
-                Vector2 direction = movingtowards / distance;
-                // if (distance < seperationRadius)
-                // {
-                rb.AddForce((direction.normalized / distance) * seperationStrength);
-                // }
+                if (distance < seperationRadius)
+                {
+                    rb.AddForce((movingtowards.normalized) * seperationStrength);
+                }
             }
         }
     }
@@ -154,6 +152,7 @@ public class WanderingBehaviour : MonoBehaviour
         }
         avgVelocity /= velocityAmnt;
 
+
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
         rb.velocity = avgVelocity;
 
@@ -162,10 +161,9 @@ public class WanderingBehaviour : MonoBehaviour
     void FixedUpdate()
     {
         // Efficiency Function, I don't think it's neccessary to call nearby colliders 60/144 times a second.
-        if (Time.frameCount % interval == 0)
-        {
+
             nearbyCivillians(this.transform.position, detectionRadius);
-        }
+        
 
         // Potential velocity clamping/ possibly delving with velocity rng? DEBUG
         /*

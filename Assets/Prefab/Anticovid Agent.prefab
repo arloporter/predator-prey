@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8966801526224562163}
   - component: {fileID: 8966801526224562160}
   - component: {fileID: 4661088600787787942}
+  - component: {fileID: 1232220778340348722}
   - component: {fileID: 4118699670665166664}
   - component: {fileID: 217977389764182512}
   - component: {fileID: 3900836097146954541}
-  - component: {fileID: 1232220778340348722}
   m_Layer: 0
   m_Name: Anticovid Agent
   m_TagString: AntiCovidAgent
@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0589ac8049a5e4b889a5e8a249d2bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   playerSightDistance: 6
   bufferDistance: 9
   sprites:
@@ -111,6 +110,33 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b80c9f63edea3dc4cac9c27e13fb40e7, type: 3}
   - {fileID: 21300000, guid: 339d62a9dd97a494ea8f3edfbe344a1c, type: 3}
   - {fileID: 21300000, guid: 300fac1be6c31e5459ec494aa5aa80fc, type: 3}
+--- !u!114 &1232220778340348722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8966801526224562161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd57f2c5c2d7e42a02d92457c5cd52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSizeX: 75
+  maxSizeY: 45
+  offset: 1
+  maxSpeed: 5
+  player: {fileID: 3900836097146954541}
+  target: {fileID: 0}
+  gridNode: {fileID: 0}
+  gridRed: {fileID: 0}
+  gridBlack: {fileID: 0}
+  Collidables:
+    serializedVersion: 2
+    m_Bits: 64
+  Costmap:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &4118699670665166664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,30 +188,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1232220778340348722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8966801526224562161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95cd57f2c5c2d7e42a02d92457c5cd52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSizeX: 75
-  maxSizeY: 45
-  offset: 1
-  maxSpeed: 5
-  player: {fileID: 3900836097146954541}
-  target: {fileID: 0}
-  gridNode: {fileID: 0}
-  gridRed: {fileID: 0}
-  gridBlack: {fileID: 0}
-  Collidables:
-    serializedVersion: 2
-    m_Bits: 64
-  Costmap:
-    serializedVersion: 2
-    m_Bits: 128
