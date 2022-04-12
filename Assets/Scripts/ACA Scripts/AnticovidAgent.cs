@@ -365,7 +365,7 @@ public class AnticovidAgent : MonoBehaviour
             }
             if (velocity.x < 0 && velocity.y <0)
             {
-                this.spriteAnimation.sprite = this.sprites[5];
+                this.spriteAnimation.sprite = this.sprites[3];
             }
 
             //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
