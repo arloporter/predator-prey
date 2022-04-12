@@ -16,8 +16,6 @@ public class AnticovidAgent : MonoBehaviour
     public Rigidbody2D player;
     public Rigidbody2D target;
     private List<Vector2> finalPath;
-    public Sprite[] sprites;
-    private SpriteRenderer spriteAnimation;
 
     public GameObject gridNode;
     public GameObject gridRed;
@@ -301,7 +299,6 @@ public class AnticovidAgent : MonoBehaviour
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
-        this.spriteAnimation = GetComponent<SpriteRenderer>();
 
         if (this.finalPath.Count > 0)
         {
@@ -335,6 +332,7 @@ public class AnticovidAgent : MonoBehaviour
             Vector2 force = desiredVel - this.player.velocity;
             Vector2 velocity = this.player.velocity;
             this.player.AddForce(force);
+<<<<<<< Updated upstream
             if(velocity.x > 0)
             {
                 this.spriteAnimation.sprite = this.sprites[5];
@@ -367,6 +365,8 @@ public class AnticovidAgent : MonoBehaviour
             {
                 this.spriteAnimation.sprite = this.sprites[3];
             }
+=======
+>>>>>>> Stashed changes
 
             //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
             if (dist < 0.3f && smoothedPath.Count > 0)
