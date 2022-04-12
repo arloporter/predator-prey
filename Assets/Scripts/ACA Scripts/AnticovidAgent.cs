@@ -332,41 +332,6 @@ public class AnticovidAgent : MonoBehaviour
             Vector2 force = desiredVel - this.player.velocity;
             Vector2 velocity = this.player.velocity;
             this.player.AddForce(force);
-<<<<<<< Updated upstream
-            if(velocity.x > 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[5];
-            }
-            if (velocity.x < 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[4];
-            }
-            if (velocity.y > 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[1];
-            }
-            if (velocity.y < 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[6];
-            }
-            if (velocity.x > 0 && velocity.y > 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[2];
-            }
-            if (velocity.x < 0 && velocity.y > 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[0];
-            }
-            if (velocity.x > 0 && velocity.y < 0)
-            {
-                this.spriteAnimation.sprite = this.sprites[7];
-            }
-            if (velocity.x < 0 && velocity.y <0)
-            {
-                this.spriteAnimation.sprite = this.sprites[3];
-            }
-=======
->>>>>>> Stashed changes
 
             //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
             if (dist < 0.3f && smoothedPath.Count > 0)

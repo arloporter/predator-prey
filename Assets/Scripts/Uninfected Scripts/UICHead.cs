@@ -16,7 +16,7 @@ public class UICHead : MonoBehaviour
     private Rigidbody2D rig;
 
     // A simple Boolean to make the distance to return to wandering a bit bigger than the base sight radius
-    private bool fleeBuffer;
+    private bool fleeBuffer = false;
     // Scripts are put here to be enabled/disabled to facilitate FSM
     private MonoBehaviour boidsBehaviour;
     private MonoBehaviour fleeingBehaviour;
