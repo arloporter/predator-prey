@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ACAHead : MonoBehaviour
 {
-    public GameObject player;
+
     public float playerSightDistance; // The distance determined as the boid Seeing the player
     public float bufferDistance; // Designed as a deadzone so that the boid focuses on the Fleeing state rather than flip-flopping at equal numbers
     private bool pursuitBuffer = false; // A simple Boolean to make the distance to return to wandering a bit bigger than the base sight radius
 
     public Sprite[] sprites;
     private SpriteRenderer spriteAnimation;
-
+    private GameObject player;
 
     // Component list
     private MonoBehaviour pathfindingBehaviour;
@@ -24,6 +24,7 @@ public class ACAHead : MonoBehaviour
         pathfindingBehaviour = GetComponent<AnticovidAgent>();
         steeringPursuitBehaviour = GetComponent<ACASteerPursuit>();
         spriteAnimation = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
 
