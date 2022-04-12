@@ -38,7 +38,6 @@ public class FleeingBehaviour : MonoBehaviour
 
 
         desiredVelocity *= speedMultiplier;
-        print("main dv" + desiredVelocity);
         return desiredVelocity;
     }
 

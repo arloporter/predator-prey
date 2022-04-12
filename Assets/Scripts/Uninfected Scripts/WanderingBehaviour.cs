@@ -151,8 +151,11 @@ public class WanderingBehaviour : MonoBehaviour
             }
         }
         avgVelocity /= velocityAmnt;
-
-
+        avgVelocity *= 1.01f;
+        if (avgVelocity.x < 0.2 || avgVelocity.y < 0.2)
+        {
+            avgVelocity *= 1.005f;
+        }
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
         rb.velocity = avgVelocity;
 
@@ -164,6 +167,8 @@ public class WanderingBehaviour : MonoBehaviour
 
             nearbyCivillians(this.transform.position, detectionRadius);
         
+
+
 
         // Potential velocity clamping/ possibly delving with velocity rng? DEBUG
         /*

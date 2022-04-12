@@ -265,7 +265,6 @@ public class AnticovidAgent : MonoBehaviour
             }
             current = frontier.Dequeue();
         }
-        Debug.Log("failed");
         
     }
     
@@ -309,11 +308,9 @@ public class AnticovidAgent : MonoBehaviour
                 RaycastHit2D hit = Physics2D.CircleCast(this.player.transform.position, 0.5f, circlecast, distance, this.Collidables);
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hit");
                     smoothedPath.Add(this.finalPath[i]);
                 } else if (hit.collider == null)
                 {
-                    Debug.Log("Clear");
                     this.finalPath.RemoveAt(i);
                    
 

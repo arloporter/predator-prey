@@ -38,7 +38,6 @@ public class ACASteerPursuit : MonoBehaviour
         if (desiredVelocity.magnitude < RADIUS_TO_START_SLOWING_DOWN_FROM)
         {
             desiredVelocity *= (desiredVelocity.magnitude / RADIUS_TO_START_SLOWING_DOWN_FROM);
-            print(desiredVelocity);
         }
 
 
