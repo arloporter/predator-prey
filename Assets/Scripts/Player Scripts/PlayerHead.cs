@@ -38,6 +38,11 @@ public class PlayerHead : MonoBehaviour
             victoryScreen.SetActive(true);
             Time.timeScale = 0;
         }
+        if (uninfectedLeft % 35 == 0 && (GameObject.FindGameObjectsWithTag("AntiCovidAgent").Length == 2)) 
+        {
+            GameObject covidAgent = GameObject.FindGameObjectWithTag("AntiCovidAgent");
+            Instantiate(covidAgent);
+        }
     }
 
     void SetCountText()

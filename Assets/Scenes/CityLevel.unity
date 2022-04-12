@@ -429,11 +429,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -445,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -453,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -1428,11 +1432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -1444,7 +1452,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -1452,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -1540,7 +1548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82175253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -1870,7 +1878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113215584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -2561,11 +2569,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -2577,7 +2589,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -2585,7 +2597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -3066,11 +3078,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -3082,7 +3098,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -3090,7 +3106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -3317,7 +3333,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181280099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -3621,7 +3637,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219257593}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -3642,7 +3658,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228245680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -4123,11 +4139,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -4139,7 +4159,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -4147,7 +4167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -4371,7 +4391,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286388050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -4392,7 +4412,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295243966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -4833,7 +4853,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314781817}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -4854,7 +4874,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317184615}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -5450,7 +5470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352945452}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -5816,11 +5836,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -5832,7 +5856,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -5840,7 +5864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -6042,7 +6066,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408125412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -6161,11 +6185,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -6177,7 +6205,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -6185,7 +6213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -6737,7 +6765,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446261374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -6758,8 +6786,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: detectionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -6771,7 +6807,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -6779,7 +6815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -6868,11 +6904,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -6884,7 +6924,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -6892,7 +6932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -7514,11 +7554,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -7530,7 +7574,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -7538,7 +7582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -7627,11 +7671,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -7643,7 +7691,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -7651,7 +7699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -8525,7 +8573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559991075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -8546,7 +8594,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560554705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -8788,11 +8836,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -8804,7 +8856,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -8812,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -8901,11 +8953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -8917,7 +8973,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -8925,7 +8981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -9220,11 +9276,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -9236,7 +9296,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -9244,7 +9304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -9332,7 +9392,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642873457}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -10789,7 +10849,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776212540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -10811,11 +10871,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -10827,7 +10891,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -10835,7 +10899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -11592,7 +11656,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846902904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -11696,11 +11760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -11712,7 +11780,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -11720,7 +11788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -12422,11 +12490,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -12438,7 +12510,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -12446,7 +12518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -12534,7 +12606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904450106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -13006,7 +13078,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959726636}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -13402,7 +13474,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975139012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -13743,7 +13815,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008971242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -14412,11 +14484,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -14428,7 +14504,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -14436,7 +14512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -15206,11 +15282,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -15222,7 +15302,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -15230,7 +15310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -15948,7 +16028,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151413120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -15975,11 +16055,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -15991,7 +16075,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -15999,7 +16083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -16285,7 +16369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181864993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -16608,7 +16692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -16617,6 +16701,10 @@ PrefabInstance:
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: currentVelocity.x
@@ -16644,7 +16732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -16652,7 +16740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -17512,7 +17600,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262764930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -17533,7 +17621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268457448}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -17554,8 +17642,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: detectionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -17567,7 +17663,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -17575,7 +17671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -17664,11 +17760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -17680,7 +17780,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -17688,7 +17788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -18005,11 +18105,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -18021,7 +18125,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -18029,7 +18133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -18251,7 +18355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -18263,7 +18367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: currentVelocity.x
@@ -18287,7 +18391,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: velocity.x
@@ -18299,7 +18403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -18403,7 +18507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318624824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -18502,11 +18606,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -18518,7 +18626,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -18526,7 +18634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -18624,8 +18732,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: detectionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -18637,7 +18753,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -18645,7 +18761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -19143,11 +19259,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -19159,7 +19279,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -19167,7 +19287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -19575,11 +19695,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -19591,7 +19715,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -19599,7 +19723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -19749,7 +19873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455142240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -20744,7 +20868,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534606485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -21076,11 +21200,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -21092,7 +21220,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -21100,7 +21228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -21545,7 +21673,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582051242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -21820,11 +21948,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -21836,7 +21968,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -21844,7 +21976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -22291,7 +22423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629589301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -22489,11 +22621,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -22505,7 +22641,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -22513,7 +22649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -23372,11 +23508,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
@@ -23388,7 +23528,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
@@ -23396,7 +23536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -23904,7 +24044,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720008907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -24080,7 +24220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -24092,7 +24232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: currentVelocity.x
@@ -24116,7 +24256,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: velocity.x
@@ -24128,7 +24268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -24650,7 +24790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784623200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -24672,11 +24812,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -24688,7 +24832,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -24696,7 +24840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -24876,7 +25020,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821777598}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -25088,7 +25232,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833921369}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -25816,11 +25960,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
@@ -25832,7 +25980,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
@@ -25840,7 +25988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -27258,7 +27406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991678375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -27279,7 +27427,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994896523}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -27300,7 +27448,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997850552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -27322,11 +27470,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -27338,7 +27490,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -27346,7 +27498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -27439,7 +27591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019956438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -27574,7 +27726,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034444492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -28216,11 +28368,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
@@ -28232,7 +28388,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
@@ -28240,7 +28396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -28514,7 +28670,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104115265}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c71c2dd589408479f9bee6bca0863b, type: 3}
   m_Name: 
@@ -28727,11 +28883,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
+      propertyPath: seperationRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
@@ -28743,7 +28903,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
@@ -28751,7 +28911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -30209,7 +30369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -30221,7 +30381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationEnabled
@@ -30241,7 +30401,7 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: velocity.x
@@ -30257,7 +30417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -30425,6 +30585,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3900836097146954541, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
     - target: {fileID: 3900836097146954541, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: m_LinearDrag
       value: 1
