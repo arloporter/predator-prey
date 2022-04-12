@@ -38,21 +38,6 @@ public class PlayerHead : MonoBehaviour
             victoryScreen.SetActive(true);
             Time.timeScale = 0;
         }
-        if (uninfectedLeft % 35 == 0 && (GameObject.FindGameObjectsWithTag("AntiCovidAgent").Length < 2)) 
-        {
-            GameObject covidAgent = GameObject.FindGameObjectWithTag("AntiCovidAgent");
-            Instantiate(covidAgent);
-        }
-        if (uninfectedLeft % 30 == 0 && (GameObject.FindGameObjectsWithTag("AntiCovidAgent").Length < 4))
-        {
-            GameObject covidAgent = GameObject.FindGameObjectWithTag("AntiCovidAgent");
-            Instantiate(covidAgent);
-        }
-        if (uninfectedLeft % 25 == 0 && (GameObject.FindGameObjectsWithTag("AntiCovidAgent").Length < 6))
-        {
-            GameObject covidAgent = GameObject.FindGameObjectWithTag("AntiCovidAgent");
-            Instantiate(covidAgent);
-        }
     
     }
 
