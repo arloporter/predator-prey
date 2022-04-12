@@ -333,36 +333,37 @@ public class AnticovidAgent : MonoBehaviour
             desiredVel.Normalize();
             desiredVel = desiredVel * this.maxSpeed; // Change to max speed
             Vector2 force = desiredVel - this.player.velocity;
+            Vector2 velocity = this.player.velocity;
             this.player.AddForce(force);
-            if(force.x > 0)
+            if(velocity.x > 0)
             {
                 this.spriteAnimation.sprite = this.sprites[5];
             }
-            if (force.x < 0)
+            if (velocity.x < 0)
             {
                 this.spriteAnimation.sprite = this.sprites[4];
             }
-            if (force.y > 0)
+            if (velocity.y > 0)
             {
                 this.spriteAnimation.sprite = this.sprites[1];
             }
-            if (force.y < 0)
+            if (velocity.y < 0)
             {
                 this.spriteAnimation.sprite = this.sprites[6];
             }
-            if (force.x > 0 && force.y > 0)
+            if (velocity.x > 0 && velocity.y > 0)
             {
                 this.spriteAnimation.sprite = this.sprites[2];
             }
-            if (force.x < 0 && force.y > 0)
+            if (velocity.x < 0 && velocity.y > 0)
             {
                 this.spriteAnimation.sprite = this.sprites[0];
             }
-            if (force.x > 0 && force.y < 0)
+            if (velocity.x > 0 && velocity.y < 0)
             {
                 this.spriteAnimation.sprite = this.sprites[7];
             }
-            if (force.x < 0 && force.y <0)
+            if (velocity.x < 0 && velocity.y <0)
             {
                 this.spriteAnimation.sprite = this.sprites[5];
             }
