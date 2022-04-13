@@ -5,6 +5,7 @@ using UnityEngine;
 public class ACASteerPursuit : MonoBehaviour
 {
     public GameObject player;
+    public float switchDistance;
     public float speedMultiplier;
     private Vector2 lastPosition;
     private Rigidbody2D rb2d;
@@ -51,14 +52,22 @@ public class ACASteerPursuit : MonoBehaviour
     private Vector2 OffsetPursuit()
     {
         Vector2 target = player.transform.position;
-        Vector2 prediction = player.transform.GetComponent<Rigidbody2D>().velocity * 2;
-        return (target + prediction);
+        if((target.magnitude - transform.position.magnitude) < switchDistance)
+        {
+            return target;
+        }
+        else
+        {
+            Vector2 prediction = player.transform.GetComponent<Rigidbody2D>().velocity * 2;
+            return (target + prediction);
+        }
     }
 
 
 
     void FixedUpdate()
     {
+
         Vector2 changeInVelocity = (OffsetPursuit() - rb2d.velocity);
         Vector2 predictedChangeInVelocity = SeekAndArrive(changeInVelocity);
         rb2d.AddForce(predictedChangeInVelocity);
