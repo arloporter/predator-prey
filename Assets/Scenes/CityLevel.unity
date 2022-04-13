@@ -425,7 +425,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -441,11 +441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -453,11 +453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -465,11 +465,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -1434,11 +1434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -1446,11 +1446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -1458,15 +1458,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -2581,11 +2581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -2593,11 +2593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -2605,11 +2605,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -2701,7 +2701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -3110,7 +3110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -3126,11 +3126,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -3138,11 +3138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -3150,11 +3150,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -4158,7 +4158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -4174,11 +4174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -4186,11 +4186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -4198,11 +4198,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -5681,7 +5681,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -5697,11 +5697,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -5709,11 +5709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -5721,11 +5721,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -6065,11 +6065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -6077,11 +6077,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -6089,11 +6089,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -6185,7 +6185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -6686,11 +6686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -6698,11 +6698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -6710,11 +6710,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -6806,7 +6806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -6823,7 +6823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -6839,11 +6839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -6851,11 +6851,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -6863,11 +6863,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -7513,7 +7513,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -7529,11 +7529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -7541,11 +7541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -7553,11 +7553,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -7678,11 +7678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -7690,11 +7690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -7702,15 +7702,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -8744,11 +8744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -8756,11 +8756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -8768,11 +8768,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -8864,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -8881,7 +8881,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -8897,11 +8897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -8909,11 +8909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -8921,11 +8921,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -9244,7 +9244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -9260,11 +9260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -9272,11 +9272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -9284,11 +9284,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -10857,11 +10857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -10869,11 +10869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -10881,11 +10881,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -10977,7 +10977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -11765,11 +11765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -11777,11 +11777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -11789,11 +11789,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -11885,7 +11885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -12433,7 +12433,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -12449,11 +12449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -12461,11 +12461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -12473,11 +12473,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -14388,7 +14388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -14404,11 +14404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -14416,11 +14416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -14428,11 +14428,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -15246,11 +15246,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -15258,11 +15258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -15270,11 +15270,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -15366,7 +15366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -16022,7 +16022,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -16038,11 +16038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -16050,11 +16050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -16062,11 +16062,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -16694,7 +16694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -16702,7 +16702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -16718,11 +16718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -16730,11 +16730,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -16830,7 +16830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -17615,7 +17615,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -17631,11 +17631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -17643,11 +17643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -17655,11 +17655,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -17780,11 +17780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -17792,11 +17792,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -17804,15 +17804,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -18157,7 +18157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -18173,11 +18173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -18185,11 +18185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -18197,11 +18197,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -18576,7 +18576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -18584,7 +18584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -18600,11 +18600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -18612,11 +18612,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -18728,7 +18728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -18822,7 +18822,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -18838,11 +18838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -18850,11 +18850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -18862,11 +18862,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -18989,7 +18989,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -19005,11 +19005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -19017,11 +19017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -19029,11 +19029,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -19563,11 +19563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -19575,11 +19575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -19587,15 +19587,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -20051,11 +20051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -20063,11 +20063,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -20075,11 +20075,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -20171,7 +20171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -21544,11 +21544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -21556,11 +21556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -21568,15 +21568,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -22311,11 +22311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -22323,11 +22323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -22335,15 +22335,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -23015,11 +23015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -23027,11 +23027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -23039,11 +23039,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -23135,7 +23135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -23922,7 +23922,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -23938,11 +23938,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationRadius
@@ -23950,11 +23950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -23962,11 +23962,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Enabled
@@ -24669,7 +24669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -24677,7 +24677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -24693,11 +24693,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -24705,11 +24705,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -24817,7 +24817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -25160,11 +25160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -25172,11 +25172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -25184,15 +25184,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -26318,11 +26318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -26330,11 +26330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -26342,11 +26342,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -26438,7 +26438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -27637,11 +27637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -27649,11 +27649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -27661,15 +27661,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -28525,7 +28525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -28541,11 +28541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationRadius
@@ -28553,11 +28553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -28565,11 +28565,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4726793147838380405, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Enabled
@@ -29067,11 +29067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationRadius
@@ -29079,11 +29079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -29091,15 +29091,15 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -30613,7 +30613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: detectionRadius
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: alignmentEnabled
@@ -30621,7 +30621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: cohesionStrength
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationRadius
@@ -30633,11 +30633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -30645,11 +30645,11 @@ PrefabInstance:
       objectReference: {fileID: 1533397783}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: bufferDistance
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: playerSightDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Enabled
@@ -30769,7 +30769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength

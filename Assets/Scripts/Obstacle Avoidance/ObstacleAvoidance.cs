@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.Mathf;
-
+// Arlos OA, unused, but kept for aid in designing OA2
 public class ObstacleAvoidance : MonoBehaviour
 {
     private Rigidbody2D player;
