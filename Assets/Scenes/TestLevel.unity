@@ -9882,7 +9882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e5053865cfbe2488933bc10c3bcef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingVelocityX: -1
+  startingVelocityX: -1.5
   startingVelocityY: 0
 --- !u!1 &862037627
 GameObject:
@@ -12937,6 +12937,14 @@ PrefabInstance:
       propertyPath: bufferDistance
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: playerSightDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
+      propertyPath: speedMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_LinearDrag
       value: 0
@@ -12955,11 +12963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.84
+      value: 44.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.8
+      value: 22.48
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951353, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14777,7 +14785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1258473957
 Transform:
   m_ObjectHideFlags: 0
@@ -23908,7 +23916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.6
+      value: 30.57
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23960,7 +23968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: moveSpeed

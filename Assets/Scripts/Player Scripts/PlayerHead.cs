@@ -11,6 +11,12 @@ public class PlayerHead : MonoBehaviour
     public TextMeshProUGUI finalScoreText;
     public GameObject victoryScreen;
 
+    public GameObject covidAgent2;
+    public GameObject covidAgent3;
+
+    private bool setCovid2Active = false;
+    private bool setCovid3Active = false;
+
 
     private int infectedCount;
     private int uninfectedLeft;
@@ -37,6 +43,18 @@ public class PlayerHead : MonoBehaviour
             this.gameObject.SetActive(false);
             victoryScreen.SetActive(true);
             Time.timeScale = 0;
+        }
+
+        if (infectedCount >= 10 && setCovid2Active == false)
+        {
+            setCovid2Active = true;
+            covidAgent2.SetActive(true);
+        }
+
+        if (infectedCount >= 25 && setCovid3Active == false)
+        {
+            setCovid3Active = true;
+            covidAgent3.SetActive(true);
         }
     
     }
