@@ -110,7 +110,7 @@ public class WanderingBehaviour : MonoBehaviour
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce((centreDirection.normalized * centreDirection.magnitude) * cohesionStrength);
+        rb.AddForce(centreDirection.normalized * cohesionStrength);
 
     }
 
@@ -155,9 +155,8 @@ public class WanderingBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Efficiency Function, I don't think it's neccessary to call nearby colliders 60/144 times a second.
 
-            nearbyCivillians(this.transform.position, detectionRadius);
+        nearbyCivillians(this.transform.position, detectionRadius);
         
 
 

@@ -425,7 +425,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -453,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -481,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -1446,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -1466,7 +1466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -1482,7 +1482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -2593,7 +2593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -2621,7 +2621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -2701,7 +2701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -3110,7 +3110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -3138,7 +3138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -3178,7 +3178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -4158,7 +4158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -4186,7 +4186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -4214,7 +4214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -5681,7 +5681,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -5709,7 +5709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -5749,7 +5749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -6077,7 +6077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -6105,7 +6105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -6185,7 +6185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -6698,7 +6698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -6726,7 +6726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -6806,7 +6806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -6823,7 +6823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -6851,7 +6851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -6891,7 +6891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -7513,7 +7513,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -7541,7 +7541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -7581,7 +7581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -7690,7 +7690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -7710,7 +7710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -7726,7 +7726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -8756,7 +8756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -8784,7 +8784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -8864,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -8881,7 +8881,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -8909,7 +8909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -8937,7 +8937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -9244,7 +9244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -9272,7 +9272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -9312,7 +9312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -10869,7 +10869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -10897,7 +10897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -10977,7 +10977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -11777,7 +11777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -11805,7 +11805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -11885,7 +11885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -12433,7 +12433,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -12461,7 +12461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -12501,7 +12501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -14388,7 +14388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -14416,7 +14416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -14444,7 +14444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -15258,7 +15258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -15286,7 +15286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -15366,7 +15366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -15638,8 +15638,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: switchDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.3
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: bufferDistance
@@ -16022,7 +16026,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -16050,7 +16054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -16078,7 +16082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -16718,7 +16722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -16746,7 +16750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -16830,7 +16834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -17615,7 +17619,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -17643,7 +17647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -17671,7 +17675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -17792,7 +17796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -17812,7 +17816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -17828,7 +17832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -18157,7 +18161,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -18185,7 +18189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -18213,7 +18217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -18341,8 +18345,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: switchDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.3
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: bufferDistance
@@ -18600,7 +18608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -18632,7 +18640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -18728,7 +18736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -18822,7 +18830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -18850,7 +18858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -18890,7 +18898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -18989,7 +18997,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -19017,7 +19025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -19057,7 +19065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -19575,7 +19583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -19595,7 +19603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -19611,7 +19619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -20063,7 +20071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -20091,7 +20099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -20171,7 +20179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -21556,7 +21564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -21576,7 +21584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -21592,7 +21600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -22323,7 +22331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -22343,7 +22351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -22359,7 +22367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -23027,7 +23035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -23055,7 +23063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -23135,7 +23143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -23922,7 +23930,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
@@ -23950,7 +23958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -23978,7 +23986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
@@ -24693,7 +24701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -24725,7 +24733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -24817,7 +24825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -25172,7 +25180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -25192,7 +25200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -25208,7 +25216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -26330,7 +26338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -26358,7 +26366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -26438,7 +26446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -27649,7 +27657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -27669,7 +27677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -27685,7 +27693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -28525,7 +28533,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
@@ -28553,7 +28561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -28593,7 +28601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
@@ -29079,7 +29087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -29099,7 +29107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
@@ -29115,7 +29123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
@@ -30633,7 +30641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
@@ -30669,7 +30677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
@@ -30769,7 +30777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
@@ -30886,8 +30894,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
+      propertyPath: switchDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.9
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: player
