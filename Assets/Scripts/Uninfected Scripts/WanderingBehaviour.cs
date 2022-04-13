@@ -110,7 +110,7 @@ public class WanderingBehaviour : MonoBehaviour
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce(centreDirection.normalized * cohesionStrength);
+        rb.AddForce((centreDirection.normalized * centreDirection.magnitude) * cohesionStrength);
 
     }
 
@@ -147,14 +147,7 @@ public class WanderingBehaviour : MonoBehaviour
             }
         }
         avgVelocity /= velocityAmnt;
-        if (avgVelocity.x < 0.3)
-        {
-            avgVelocity.x *= 1.2f;
-        }
-        if (avgVelocity.y < 0.3)
-        {
-            avgVelocity.y *= 1.2f;
-        }
+
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
         rb.velocity = avgVelocity;
 
