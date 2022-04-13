@@ -124,7 +124,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.3, y: 0.75}
+  m_Size: {x: 0.25, y: 0.6}
   m_Direction: 0
 --- !u!114 &4340977142081038440
 MonoBehaviour:
@@ -164,7 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRadius: 4
   startVelocitySpeedAvg: 3
-  seperationRadius: 1
   cohesionEnabled: 1
   cohesionStrength: 3
   seperationEnabled: 1

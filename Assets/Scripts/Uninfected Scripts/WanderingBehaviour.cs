@@ -8,8 +8,6 @@ public class WanderingBehaviour : MonoBehaviour
     public float detectionRadius = 3f;
     // Average starting velocity for the boid on instantiate/spawn
     public float startVelocitySpeedAvg = 2f;
-    // Radius to start seperating boids
-    public float seperationRadius = 1f;
 
     // Enable/Disable Boids functions
     public bool cohesionEnabled = true;
@@ -22,7 +20,6 @@ public class WanderingBehaviour : MonoBehaviour
 
 
     // Interval between code checks
-    private int interval = 3;
     private Rigidbody2D rb;
     private int alignmentInterval = 0;
 
@@ -73,7 +70,7 @@ public class WanderingBehaviour : MonoBehaviour
             }
             if (seperationEnabled == true && nearbyUninfected > 0)
             {
-                seperation(otherrb2D, seperationRadius);
+                seperation(otherrb2D);
             }
             if (alignmentEnabled == true && nearbyUninfected > 0 && alignmentInterval >= alignmentDelay)
             {
@@ -113,11 +110,11 @@ public class WanderingBehaviour : MonoBehaviour
         Vector2 centreDirection = avgTransform - (Vector2)this.transform.position;
 
         // Basic addforce based on the direction given, would like to improve
-        rb.AddForce(centreDirection.normalized * cohesionStrength);
+        rb.AddForce((centreDirection.normalized * centreDirection.magnitude) * cohesionStrength);
 
     }
 
-    void seperation(Rigidbody2D[] nearbyUninfectedRB, float seperationRadius)
+    void seperation(Rigidbody2D[] nearbyUninfectedRB)
     {
         // Iterates through the array to calculate the distance between two units within the boids
         // and if the distance < seperationRadius then an opposite force is pushed against the boid to facilitate with seperation
@@ -127,10 +124,9 @@ public class WanderingBehaviour : MonoBehaviour
             {
                 Vector2 movingtowards = rb.position - nearbyUninfectedRB[i].position;
                 float distance = movingtowards.magnitude;
-                if (distance < seperationRadius)
-                {
-                    rb.AddForce((movingtowards.normalized) * seperationStrength);
-                }
+                float distancePower = 1 / distance;
+
+                rb.AddForce((movingtowards.normalized * distancePower) * seperationStrength);
             }
         }
     }
@@ -151,11 +147,7 @@ public class WanderingBehaviour : MonoBehaviour
             }
         }
         avgVelocity /= velocityAmnt;
-        avgVelocity *= 1.01f;
-        if (avgVelocity.x < 0.2 || avgVelocity.y < 0.2)
-        {
-            avgVelocity *= 1.005f;
-        }
+
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
         rb.velocity = avgVelocity;
 
