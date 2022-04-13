@@ -147,13 +147,13 @@ public class WanderingBehaviour : MonoBehaviour
             }
         }
         avgVelocity /= velocityAmnt;
-        if (avgVelocity.x < 0.4)
+        if (avgVelocity.x < 0.3)
         {
-            avgVelocity.x *= 1.1f;
+            avgVelocity.x *= 1.2f;
         }
-        if (avgVelocity.y < 0.4)
+        if (avgVelocity.y < 0.3)
         {
-            avgVelocity.y *= 1.1f;
+            avgVelocity.y *= 1.2f;
         }
         // Would like to introduce rng or maybe have alignment be a bit weaker? Snaps into place quite quickly.
         rb.velocity = avgVelocity;

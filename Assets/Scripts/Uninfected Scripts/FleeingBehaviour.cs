@@ -12,7 +12,7 @@ public class FleeingBehaviour : MonoBehaviour
     private Vector2 lastPosition;
     private Rigidbody2D rb2d;
     private LineRenderer lr;
-    private const float RADIUS_TO_START_SLOWING_DOWN_FROM = 7f;
+    //private const float RADIUS_TO_START_SLOWING_DOWN_FROM = 2.0f;
 
 
     void Start()
@@ -33,7 +33,7 @@ public class FleeingBehaviour : MonoBehaviour
         Vector2 desiredVelocity = unAffectedCivillians - target;
         desiredVelocity.Normalize();
 
-        desiredVelocity *= RADIUS_TO_START_SLOWING_DOWN_FROM / desiredVelocity.magnitude;
+        //desiredVelocity *= RADIUS_TO_START_SLOWING_DOWN_FROM / desiredVelocity.magnitude;
 
 
 

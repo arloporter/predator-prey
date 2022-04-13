@@ -425,11 +425,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -453,11 +453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -477,20 +477,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -1446,11 +1446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -1466,11 +1466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -1478,20 +1478,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -2593,11 +2593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -2617,20 +2617,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -2701,11 +2701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -3110,11 +3110,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -3138,11 +3138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -3174,20 +3174,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -4158,11 +4158,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -4186,11 +4186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -4210,20 +4210,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -5681,11 +5681,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -5709,11 +5709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -5745,20 +5745,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -6077,11 +6077,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -6101,20 +6101,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -6185,11 +6185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -6698,11 +6698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -6722,20 +6722,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -6806,11 +6806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -6823,11 +6823,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -6851,11 +6851,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -6887,20 +6887,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -7513,11 +7513,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -7541,11 +7541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -7577,20 +7577,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -7690,11 +7690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -7710,11 +7710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -7722,20 +7722,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -8756,11 +8756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -8780,20 +8780,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -8864,11 +8864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -8881,11 +8881,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -8909,11 +8909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -8933,20 +8933,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -9244,11 +9244,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -9272,11 +9272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -9308,20 +9308,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -10869,11 +10869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -10893,20 +10893,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -10977,11 +10977,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -11777,11 +11777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -11801,20 +11801,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -11885,11 +11885,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -12433,11 +12433,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -12461,11 +12461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -12497,20 +12497,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -14388,11 +14388,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -14416,11 +14416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -14440,20 +14440,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -15258,11 +15258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -15282,20 +15282,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -15366,11 +15366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -15639,7 +15639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.55
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: bufferDistance
@@ -16022,11 +16022,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -16050,11 +16050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -16074,20 +16074,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -16718,11 +16718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -16742,20 +16742,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -16830,11 +16830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -17615,11 +17615,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -17643,11 +17643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -17667,20 +17667,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -17792,11 +17792,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -17812,11 +17812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -17824,20 +17824,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -18157,11 +18157,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -18185,11 +18185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -18209,20 +18209,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -18342,7 +18342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.55
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: bufferDistance
@@ -18600,11 +18600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -18628,20 +18628,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -18728,11 +18728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -18822,11 +18822,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -18850,11 +18850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -18886,20 +18886,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -18989,11 +18989,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -19017,11 +19017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -19053,20 +19053,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -19575,11 +19575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -19595,11 +19595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -19607,20 +19607,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -20063,11 +20063,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -20087,20 +20087,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -20171,11 +20171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -21556,11 +21556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -21576,11 +21576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -21588,20 +21588,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -22323,11 +22323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -22343,11 +22343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -22355,20 +22355,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -23027,11 +23027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -23051,20 +23051,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -23135,11 +23135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -23922,11 +23922,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8272087570267691280, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: alignmentDelay
@@ -23950,11 +23950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: player
@@ -23974,20 +23974,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 53eccc6a73cc32547822eff961a31bdd, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -24693,11 +24693,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -24721,20 +24721,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -24817,11 +24817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -25172,11 +25172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -25192,11 +25192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -25204,20 +25204,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -26330,11 +26330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -26354,20 +26354,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -26438,11 +26438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -27649,11 +27649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -27669,11 +27669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -27681,20 +27681,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -28525,11 +28525,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1704938335082327386, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: alignmentDelay
@@ -28553,11 +28553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: player
@@ -28589,20 +28589,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: ddf19e4739200f14f899b4f2856eb978, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -29079,11 +29079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: player
@@ -29099,11 +29099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5682722656559037897, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Enabled
@@ -29111,20 +29111,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 0839a1ae9ee870c4ca4cbe89b0042e6f, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -30633,11 +30633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: seperationStrength
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2120697816829826690, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: startVelocitySpeedAvg
-      value: 2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4340977142081038440, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: player
@@ -30665,20 +30665,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: maxVelocity
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951302, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: speedMultiplier
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6091485119625951303, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -30769,11 +30769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: raycastDistance
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9150761061183254716, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
       propertyPath: antiColliderStrength
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d1054ea422f534f8ef5b7b57fae816, type: 3}
@@ -30868,7 +30868,7 @@ PrefabInstance:
     - target: {fileID: 3900836097146954541, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 90771825cfb3622498e1835b36106013, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3900836097146954541, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: m_LinearDrag
       value: 1
@@ -30887,7 +30887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4118699670665166664, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: speedMultiplier
-      value: 0.55
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4661088600787787942, guid: 60c77f30e49ef3840b8c7d8a78bfc991, type: 3}
       propertyPath: player

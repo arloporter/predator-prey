@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ObstacleAvoidance2 : MonoBehaviour
 {
-    public float raycastDistance = 1;
     public LayerMask Collidables;
     public float antiColliderStrength = 1;
+    public float raycastDistance = 2;
 
     private Rigidbody2D player;
 
@@ -17,10 +17,10 @@ public class ObstacleAvoidance2 : MonoBehaviour
         this.player = GetComponent<Rigidbody2D>();
     }
 
-    public void collisionAvoidance(Vector2 directionalVector)
+    public void collisionAvoidance(Vector2 directionalVector, float rcDistance)
     {
         Vector2 position = this.player.transform.position;
-        RaycastHit2D hit = Physics2D.Raycast(position, directionalVector ,raycastDistance, Collidables);
+        RaycastHit2D hit = Physics2D.Raycast(position, directionalVector , rcDistance, Collidables);
         if(hit.collider != null)
         {
             Vector2 collidable = (Vector2)player.transform.position - hit.point;
@@ -38,14 +38,16 @@ public class ObstacleAvoidance2 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        collisionAvoidance(new Vector2(1.0f,0.0f));
-        collisionAvoidance(new Vector2(0.707f, 0.707f));
-        collisionAvoidance(new Vector2(0.0f, 1.0f));
-        collisionAvoidance(new Vector2(-0.707f, 0.707f));
-        collisionAvoidance(new Vector2(-1.0f, 0.0f));
-        collisionAvoidance(new Vector2(-0.707f, -0.707f));
-        collisionAvoidance(new Vector2(0.0f, -1.0f));
-        collisionAvoidance(new Vector2(0.707f, -0.707f));
+        float raycastDistanceDiagonal = raycastDistance / 2;
+
+        collisionAvoidance(new Vector2(1.0f,0.0f), raycastDistance);
+        collisionAvoidance(new Vector2(0.707f, 0.707f), raycastDistanceDiagonal);
+        collisionAvoidance(new Vector2(0.0f, 1.0f), raycastDistance);
+        collisionAvoidance(new Vector2(-0.707f, 0.707f), raycastDistanceDiagonal);
+        collisionAvoidance(new Vector2(-1.0f, 0.0f), raycastDistance);
+        collisionAvoidance(new Vector2(-0.707f, -0.707f), raycastDistanceDiagonal);
+        collisionAvoidance(new Vector2(0.0f, -1.0f), raycastDistance);
+        collisionAvoidance(new Vector2(0.707f, -0.707f), raycastDistanceDiagonal);
     }
 
 }

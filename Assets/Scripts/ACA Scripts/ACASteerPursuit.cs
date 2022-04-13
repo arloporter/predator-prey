@@ -9,7 +9,7 @@ public class ACASteerPursuit : MonoBehaviour
     private Vector2 lastPosition;
     private Rigidbody2D rb2d;
     private LineRenderer lr;
-    private const float RADIUS_TO_START_SLOWING_DOWN_FROM = 7f;
+    private const float RADIUS_TO_START_SLOWING_DOWN_FROM = 0.001f;
 
 
 
@@ -32,16 +32,10 @@ public class ACASteerPursuit : MonoBehaviour
     {
         Vector2 currentAntiCovidAgentPos = rb2d.position;
         Vector2 desiredVelocity = target - currentAntiCovidAgentPos;
-
-
-
-        if (desiredVelocity.magnitude < RADIUS_TO_START_SLOWING_DOWN_FROM)
-        {
-            desiredVelocity *= (desiredVelocity.magnitude / RADIUS_TO_START_SLOWING_DOWN_FROM);
-        }
-
-
-
+        //if (desiredVelocity.magnitude < RADIUS_TO_START_SLOWING_DOWN_FROM)
+        //{
+        //    desiredVelocity *= (desiredVelocity.magnitude / RADIUS_TO_START_SLOWING_DOWN_FROM);
+        //}
         desiredVelocity *= speedMultiplier;
         return desiredVelocity;
     }
@@ -51,7 +45,7 @@ public class ACASteerPursuit : MonoBehaviour
     private Vector2 OffsetPursuit()
     {
         Vector2 target = player.transform.position;
-        Vector2 prediction = player.transform.GetComponent<Rigidbody2D>().velocity * 2;
+        Vector2 prediction = player.transform.GetComponent<Rigidbody2D>().velocity;
         return (target + prediction);
     }
 
@@ -59,8 +53,8 @@ public class ACASteerPursuit : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 changeInVelocity = (OffsetPursuit() - rb2d.velocity);
-        Vector2 predictedChangeInVelocity = SeekAndArrive(changeInVelocity);
-        rb2d.AddForce(predictedChangeInVelocity);
+            Vector2 changeInVelocity = (OffsetPursuit() - rb2d.velocity);
+            Vector2 predictedChangeInVelocity = SeekAndArrive(changeInVelocity);
+            rb2d.AddForce(predictedChangeInVelocity);
     }
 }
