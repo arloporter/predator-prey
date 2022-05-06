@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UICHead : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject[] players;
     public float playerSightDistance; // The distance determined as the boid Seeing the player
     public float bufferDistance; // Designed as a deadzone so that the boid focuses on the Fleeing state rather than flip-flopping at equal numbers
 
@@ -20,6 +20,7 @@ public class UICHead : MonoBehaviour
     // Scripts are put here to be enabled/disabled to facilitate FSM
     private MonoBehaviour boidsBehaviour;
     private MonoBehaviour fleeingBehaviour;
+    
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class UICHead : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         boidsBehaviour = GetComponent<WanderingBehaviour>();
         fleeingBehaviour = GetComponent<FleeingBehaviour>();
+        players = GameObject.FindGameObjectsWithTag("Player");
 
     }
     // So, what will be done here is the Vector2 Magnitude calculation, determining the distance between both the player and the script owner(In this case the uninfected Civillian)
@@ -35,7 +37,19 @@ public class UICHead : MonoBehaviour
     private void Update()
     {
         // Calculate Distance between player and current gameobject
-        float distance = Vector2.Distance(player.transform.position, this.transform.position);
+        GameObject closestPlayer = null;
+        float minDistance = 9999;
+        foreach(GameObject player in this.players)
+        {
+            float tempDistance = Vector2.Distance(this.transform.position, player.transform.position);
+            if(tempDistance<minDistance)
+            {
+                minDistance = tempDistance;
+                closestPlayer = player;
+            }
+
+        }
+        float distance = Vector2.Distance(closestPlayer.transform.position, this.transform.position);
         // print(distance); DEBUG
 
         // In most cases the unInfeceted Civillian will spawn in as Wander, and then as the player is chasing them down and getting closer, the civillian will transfer to Flee
