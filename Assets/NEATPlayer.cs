@@ -7,16 +7,36 @@ using UnitySharpNEAT;
 
 public class NEATPlayer : UnitController
 {
-    private double northForce;
-    private double eastForce;
-    private double southForce;
-    private double westForce;
+    private int choice;
+    private double offset = 0.125;
+    private double force;
+    private int forceMultiplier = 20;
     public GameObject civilianPrefab;
-
+    private HashSet<Vector2> positionsPassed;
     private int reward;
     private System.Random rnd = new System.Random();
+    private Vector2 initialPosition;
+    private Rigidbody2D rb;
+    private List<List<Vector2>> previousPaths = new List<List<Vector2>>();
+    private List<Vector2> currentPath; 
+    
     void Start()
     {
+        this.currentPath = new List<Vector2>();
+        this.rb = GetComponent<Rigidbody2D>();
+        initialPosition = this.transform.position;
+        this.positionsPassed = new HashSet<Vector2>();
+
+    }
+    void Update()
+    {
+        Vector2 discretizedPos = new Vector2((float)Math.Floor(transform.position.x), (float)Math.Floor(transform.position.y));
+        this.positionsPassed.Add(discretizedPos);
+        if(!this.currentPath.Contains(discretizedPos))
+        {
+            this.currentPath.Add(discretizedPos);
+        }
+        
 
     }
   
@@ -28,7 +48,8 @@ public class NEATPlayer : UnitController
             col.gameObject.SetActive(false);
             int spawnX = this.rnd.Next(5, 35);
             int spawnY = this.rnd.Next(20);
-            Instantiate(this.civilianPrefab, new Vector3(spawnX, spawnY), Quaternion.identity);
+            GameObject civilian = Instantiate(this.civilianPrefab, new Vector3(spawnX, spawnY), Quaternion.identity);
+            civilian.SetActive(true);
         }
     }
     protected override void UpdateBlackBoxInputs(ISignalArray inputSignalArray)
@@ -147,16 +168,36 @@ public class NEATPlayer : UnitController
 
     protected override void UseBlackBoxOutpts(ISignalArray outputs)
     {
-        this.northForce = outputs[0];
-        Debug.Log(northForce);
-        this.eastForce  = outputs[1];
-        Debug.Log(eastForce);
-        this.southForce = outputs[2];
-        Debug.Log(southForce);
-        this.westForce  = outputs[3];
-        Debug.Log(westForce);
-
-        GetComponent<Rigidbody2D>().AddForce(new Vector2((float)Math.Abs(this.eastForce)*5+ (float)-Math.Abs(this.westForce)*5, (float)Math.Abs(this.northForce)*5+(float)-Math.Abs(this.southForce)*5));
+        Debug.Log(outputs[0]);
+        this.choice = (int) Math.Floor(outputs[0] / this.offset);
+        this.force = outputs[1];
+        switch(this.choice)
+        {
+            case 0:
+                this.rb.AddForce(new Vector2( 0.0f, (float)this.force * this.forceMultiplier));
+                break;
+            case 1:
+                this.rb.AddForce(new Vector2(0.0f, -((float)this.force * this.forceMultiplier)));
+                break;
+            case 2:
+                this.rb.AddForce(new Vector2(((float)this.force * this.forceMultiplier), 0.0f));
+                break;
+            case 3:
+                this.rb.AddForce(new Vector2(-((float)this.force * this.forceMultiplier), 0.0f));
+                break;
+            case 4:
+                this.rb.AddForce(new Vector2(((float)this.force * this.forceMultiplier), ((float)this.force * this.forceMultiplier)));
+                break;
+            case 5:
+                this.rb.AddForce(new Vector2(-((float)this.force * this.forceMultiplier), ((float)this.force * this.forceMultiplier)));
+                break;
+            case 6:
+                this.rb.AddForce(new Vector2(((float)this.force * this.forceMultiplier), -((float)this.force * this.forceMultiplier)));
+                break;
+            case 7:
+                this.rb.AddForce(new Vector2(-((float)this.force * this.forceMultiplier), -((float)this.force * this.forceMultiplier)));
+                break;
+        }
     }
 
     public override float GetFitness()
@@ -164,32 +205,12 @@ public class NEATPlayer : UnitController
         // Called during the evaluation phase (at the end of each trail)
         // The performance of this unit, i.e. it's fitness, is retrieved by this function.
         // Implement a meaningful fitness function here
-        Debug.Log(this.reward);
-        return this.reward;
-
-        /* public override float GetFitness()
+        Debug.Log("reward: "+this.reward);
+        if(!this.previousPaths.Contains(this.currentPath))
         {
-            // calculate a fitness value based on how many laps were driven, how many roads crossed and how many walls touched.
-
-            if (Lap == 1 && CurrentPiece == 0)
-            {
-                return 0;
-            }
-
-            int piece = CurrentPiece;
-            if (CurrentPiece == 0)
-            {
-                piece = 17;
-            }
-
-            float fit = Lap * piece - WallHits * 0.2f;
-            if (fit > 0)
-            {
-                return fit;
-            }
-            return 0;
-        }*/
-
+            this.reward += 10;
+        }
+        return (this.reward*5) + this.positionsPassed.Count;
     }
 
     protected override void HandleIsActiveChanged(bool newIsActive)
@@ -198,30 +219,20 @@ public class NEATPlayer : UnitController
         // Since NeatSupervisor.cs is making use of Object Pooling, this Unit will never get destroyed. 
         // Make sure that when IsActive gets set to false, the variables and the Transform of this Unit are reset!
         // Consider to also disable MeshRenderers until IsActive turns true again.
-        ;
-        /* if (newIsActive == false)
+        
+        if (newIsActive == false)
             {
-                // the unit has been deactivated, IsActive was switched to false
-
-                // reset transform
-                transform.position = _initialPosition;
-                transform.rotation = _initialRotation;
-
-                // reset members
-                Lap = 1;
-                CurrentPiece = 0;
-                LastPiece = 0;
-                WallHits = 0;
-                _movingForward = true;
+                this.previousPaths.Add(this.currentPath);
+                this.positionsPassed = new HashSet<Vector2>();
+                transform.position = this.initialPosition;
+                transform.rotation = Quaternion.identity;
             }
 
-            // hide/show children 
-            // the children happen to be the car meshes => we hide this Unit when IsActive turns false and show it when it turns true
             foreach (Transform t in transform)
             {
                 t.gameObject.SetActive(newIsActive);
             }
-        }
-        */
+        
+        
     }
 }

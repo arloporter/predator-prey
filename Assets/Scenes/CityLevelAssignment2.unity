@@ -6575,7 +6575,7 @@ Transform:
   m_GameObject: {fileID: 307983463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.53999996, y: 9.5, z: 0}
-  m_LocalScale: {x: 1, y: 20.07508, z: 1}
+  m_LocalScale: {x: 1, y: 21.83165, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -18097,7 +18097,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 11
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -18121,7 +18121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969980580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.82, y: 14.190001, z: -10}
+  m_LocalPosition: {x: 17.49, y: 10.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26759,6 +26759,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2130475
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2130475
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6173967
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.5
       objectReference: {fileID: 0}
@@ -26825,6 +26837,10 @@ PrefabInstance:
     - target: {fileID: 824346779622391658, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
       propertyPath: m_LinearDrag
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391658, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 824346779622391657, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
@@ -35648,10 +35664,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _experimentConfigFileName: experiment.config
   _networkInputCount: 8
-  _networkOutputCount: 4
-  Trials: 1
-  TrialDuration: 20
-  StoppingFitness: 30
+  _networkOutputCount: 2
+  Trials: 20
+  TrialDuration: 1
+  StoppingFitness: 10000
   _unitControllerPrefab: {fileID: 501344135}
   _spawnParent: {fileID: 1463705088}
   _enableDebugLogging: 1

@@ -7,7 +7,7 @@
       <Activation>
         <Scheme>Acyclic</Scheme>
       </Activation>
-      <ComplexityRegulationStrategy>Absolute</ComplexityRegulationStrategy>
-      <ComplexityThreshold>50</ComplexityThreshold>
+      <ComplexityRegulationStrategy>NullComplexityRegulationStrategy</ComplexityRegulationStrategy>
+      <ComplexityThreshold>400</ComplexityThreshold>
       <Description>Player learns to maximize its score</Description>
     </Config>
