@@ -26271,7 +26271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26314,11 +26314,66 @@ PrefabInstance:
       value: Placeholder Player
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391656, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824346779622391656, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
       propertyPath: moveSpeed
       value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+--- !u!1 &1428966103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 824346779622391638, guid: 2f38c82a7a5cd034985a88ac81e04e13, type: 3}
+  m_PrefabInstance: {fileID: 1428966102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1428966104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428966103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f72a04f0a43ac9498dfe8e93997327c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 2000
+--- !u!114 &1428966105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428966103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 0
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 09000000
+    VectorActionSize: 09000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1001 &1429084280
 PrefabInstance:
   m_ObjectHideFlags: 0
