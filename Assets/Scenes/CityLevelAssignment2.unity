@@ -40618,6 +40618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5054099818901535049, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
+      propertyPath: m_BehaviorName
+      value: CovidSpreader
+      objectReference: {fileID: 0}
     - target: {fileID: 7220344892018603464, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: m_Name
       value: Covid Spreader(ML Agent)
