@@ -6,6 +6,7 @@ TagManager:
   tags:
   - uninfectedCivillian
   - AntiCovidAgent
+  - CovidSpreader
   layers:
   - Default
   - TransparentFX
