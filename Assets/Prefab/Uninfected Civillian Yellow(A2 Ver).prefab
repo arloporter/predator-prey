@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3075541444236631776}
   - component: {fileID: 7154516366119153700}
   - component: {fileID: 2335564639395833144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Uninfected Civillian Yellow(A2 Ver)
   m_TagString: uninfectedCivillian
   m_Icon: {fileID: 0}

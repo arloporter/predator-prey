@@ -39748,6 +39748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Uninfected Civillian Grey(A2 Ver)
       objectReference: {fileID: 0}
+    - target: {fileID: 2195576285467717876, guid: 90f642b1d8d46f44ea80763ac7e899fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2195576285467717878, guid: 90f642b1d8d46f44ea80763ac7e899fb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -40618,10 +40622,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5054099818901535049, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
-      propertyPath: m_BehaviorName
-      value: CovidSpreader
-      objectReference: {fileID: 0}
     - target: {fileID: 7220344892018603464, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: m_Name
       value: Covid Spreader(ML Agent)
@@ -40671,19 +40671,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7418370469392231916, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
-      propertyPath: speedMultiplier
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7418370469392231916, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
-      propertyPath: sprites.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7418370469392231916, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: uninfectedCivillianParent
       value: 
       objectReference: {fileID: 631958793}
     m_RemovedComponents:
     - {fileID: 8017386365248473744, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
+    - {fileID: 8040185577761947160, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
 --- !u!1001 &8498105550869728599
 PrefabInstance:

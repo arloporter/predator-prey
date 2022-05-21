@@ -34,6 +34,7 @@ public class CovidSpreaderAgent : Agent
 
     public void HandleCollectionUninfectedCivillian()
     {
+        Debug.Log("Got a Civillian");
         AddReward(1.0f);
         uninfectedCivilliansCaught++;
 
@@ -47,6 +48,7 @@ public class CovidSpreaderAgent : Agent
     public void HandleHitAntiCovidAgent()
     {
         AddReward(-0.25f);
+        Debug.Log("Got Caught");
     }
 
     public override void OnEpisodeBegin()
@@ -68,7 +70,7 @@ public class CovidSpreaderAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        
+        sensor.AddObservation(0.0f); // Dummy
     }
 
     public override void OnActionReceived(ActionBuffers actions)
