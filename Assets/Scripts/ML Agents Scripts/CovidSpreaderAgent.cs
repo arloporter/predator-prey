@@ -15,7 +15,7 @@ public class CovidSpreaderAgent : Agent
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
 
-    private Vector3 covidSpreaderStartPos;
+    // private Vector3 covidSpreaderStartPos;
 
     public Transform uninfectedCivillianParent;
 
@@ -29,7 +29,9 @@ public class CovidSpreaderAgent : Agent
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
-        covidSpreaderStartPos = transform.position;
+
+        // Old Static Spawn
+        // covidSpreaderStartPos = transform.position;
     }
 
     public void HandleCollectionUninfectedCivillian()
@@ -55,7 +57,11 @@ public class CovidSpreaderAgent : Agent
     {
         uninfectedCivilliansCaught = 0;
 
-        transform.position = covidSpreaderStartPos;
+        // To be used for randomised spawning of the Covid Spreader
+        float randomXPos = Random.Range(15, 25);
+        float randomYPos = Random.Range(10, 15);
+
+        transform.position = new Vector3 (randomXPos, randomYPos, 0.0f);
 
         foreach (Transform uninfected in uninfectedCivillianParent)
         {
