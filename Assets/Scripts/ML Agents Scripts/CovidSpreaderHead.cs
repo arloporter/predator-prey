@@ -10,11 +10,13 @@ public class CovidSpreaderHead : MonoBehaviour
     {
         if(other.gameObject.tag == "uninfectedCivillian")
         {
-            other.gameObject.GetComponent<CovidSpreaderAgent>().HandleCollectionUninfectedCivillian();
+            other.gameObject.SetActive(false);
+            this.gameObject.GetComponent<CovidSpreaderAgent>().HandleCollectionUninfectedCivillian();
         }
         if(other.gameObject.tag == "AntiCovidAgent")
         {
-            other.gameObject.GetComponent<CovidSpreaderAgent>().HandleHitAntiCovidAgent();
+            other.gameObject.SetActive(false);
+            this.gameObject.GetComponent<CovidSpreaderAgent>().HandleHitAntiCovidAgent();
         }
     }
 }

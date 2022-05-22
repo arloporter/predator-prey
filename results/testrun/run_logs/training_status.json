@@ -1,0 +1,29 @@
+{
+    "CovidSpreader": {
+        "checkpoints": [
+            {
+                "steps": 33328,
+                "file_path": "results\\testrun\\CovidSpreader\\CovidSpreader-33328.onnx",
+                "reward": 2.0,
+                "creation_time": 1653188455.0599594,
+                "auxillary_file_paths": [
+                    "results\\testrun\\CovidSpreader\\CovidSpreader-33328.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 33328,
+            "file_path": "results\\testrun\\CovidSpreader.onnx",
+            "reward": 2.0,
+            "creation_time": 1653188455.0599594,
+            "auxillary_file_paths": [
+                "results\\testrun\\CovidSpreader\\CovidSpreader-33328.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

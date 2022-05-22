@@ -17739,7 +17739,6 @@ GameObject:
   - component: {fileID: 969980583}
   - component: {fileID: 969980582}
   - component: {fileID: 969980581}
-  - component: {fileID: 969980584}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -17782,7 +17781,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 10
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -17806,30 +17805,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969980580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.32, y: 18.79, z: -10}
+  m_LocalPosition: {x: 22, y: 15, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &969980584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969980580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74c665ce174c6a43a9ff79363f25670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 824346778866120066}
-  maxY: 18
-  minY: 10
-  maxX: 28
-  minX: 16
-  cameraZ: -10
 --- !u!1001 &971106513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20237,7 +20218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1097924358
 Transform:
   m_ObjectHideFlags: 0
@@ -39098,11 +39079,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8494125429915573554, guid: d6e8ff762921ce54b856748d32e0c1b8, type: 3}
   m_PrefabInstance: {fileID: 8498105550869728599}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &824346778866120066 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7220344892018603466, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
-  m_PrefabInstance: {fileID: 8017386363821113416}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1949699311507346407
 PrefabInstance:
