@@ -18,20 +18,35 @@ public class CovidSpreaderAgent : Agent
     // private Vector3 covidSpreaderStartPos;
 
     public Transform uninfectedCivillianParent;
+    public Transform antiCovidAgentParent;
+
+    private Vector3[] uninfectedCivillianTransformArray;
+    private Vector3[] antiCovidAgentTransformArray;
 
     private int uninfectedCivilliansCaught;
     void Start()
     {
         Application.runInBackground = true;
 
-        MaxStep = 2000;
-
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
+        uninfectedCivillianTransformArray = new Vector3[uninfectedCivillianParent.childCount];
+        int uninfectedRecordSpawnPositionCounter = 0;
 
-        // Old Static Spawn
-        // covidSpreaderStartPos = transform.position;
+        foreach (Transform uninfected in uninfectedCivillianParent)
+        {
+            uninfectedCivillianTransformArray[uninfectedRecordSpawnPositionCounter] = uninfected.position;
+            uninfectedRecordSpawnPositionCounter++;
+        }
+
+        antiCovidAgentTransformArray = new Vector3[antiCovidAgentParent.childCount];
+        int antiCovidAgentRecordSpawnPositionCounter = 0;
+        foreach (Transform antiCovidAgent in antiCovidAgentParent)
+        {
+            antiCovidAgentTransformArray[antiCovidAgentRecordSpawnPositionCounter] = antiCovidAgent.position;
+            antiCovidAgentRecordSpawnPositionCounter++;
+        }
     }
 
     public void HandleCollectionUninfectedCivillian()
@@ -46,7 +61,6 @@ public class CovidSpreaderAgent : Agent
         }
     }
 
-    // Unused
     public void HandleHitAntiCovidAgent()
     {
         AddReward(-0.25f);
@@ -58,19 +72,28 @@ public class CovidSpreaderAgent : Agent
         uninfectedCivilliansCaught = 0;
 
         // To be used for randomised spawning of the Covid Spreader
-        float randomXPos = Random.Range(15, 25);
-        float randomYPos = Random.Range(10, 15);
+        float randomXPos = Random.Range(17, 27);
+        float randomYPos = Random.Range(10, 20);
 
         transform.position = new Vector3 (randomXPos, randomYPos, 0.0f);
 
+        int uninfectedPositionResetCounter = 0;
         foreach (Transform uninfected in uninfectedCivillianParent)
         {
             uninfected.gameObject.SetActive(true);
+            uninfected.position = uninfectedCivillianTransformArray[uninfectedPositionResetCounter];
+            uninfectedPositionResetCounter++;
+            uninfected.GetComponent<UICHeadA2>().RandomEarlyMovement(-1f, 1f);
         }
-        // foreach (Transform antiCovidAgent in antiCovidAgentParent)
-        // {
-        // antiCovidAgent.gameObject.setActive(true);
-        // }
+
+        int antiCovidAgentPositionResetCounter = 0;
+        foreach (Transform antiCovidAgent in antiCovidAgentParent)
+        {
+            antiCovidAgent.gameObject.SetActive(true);
+            antiCovidAgent.position = antiCovidAgentTransformArray[antiCovidAgentPositionResetCounter];
+            antiCovidAgentPositionResetCounter++;
+            // antiCovidAgent.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
 
     }
 

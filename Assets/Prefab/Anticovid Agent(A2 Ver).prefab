@@ -10,12 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8494125429915573554}
   - component: {fileID: 8494125429915573553}
-  - component: {fileID: 5277879060576688743}
-  - component: {fileID: 1767929129642330611}
-  - component: {fileID: 3511057212064826761}
-  - component: {fileID: 5162261944542736506}
   - component: {fileID: 763115144191900465}
   - component: {fileID: 4590229781450480108}
+  - component: {fileID: 5687980203171323653}
   m_Layer: 9
   m_Name: Anticovid Agent(A2 Ver)
   m_TagString: AntiCovidAgent
@@ -88,88 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5277879060576688743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494125429915573552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb0589ac8049a5e4b889a5e8a249d2bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSightDistance: 6
-  bufferDistance: 9
-  sprites:
-  - {fileID: 21300000, guid: 6a845cf4003adc94c9a3ec0c506fd434, type: 3}
-  - {fileID: 21300000, guid: 1a98e5cd651b9f74dabdce0e959bcf41, type: 3}
-  - {fileID: 21300000, guid: 5b958c15253788842bc6bb87c38bcc5d, type: 3}
-  - {fileID: 21300000, guid: 4e7783ad83fd73b46b0fae6f6d1a37fd, type: 3}
-  - {fileID: 21300000, guid: df533dbd405660a408bd3278d2672320, type: 3}
-  - {fileID: 21300000, guid: b80c9f63edea3dc4cac9c27e13fb40e7, type: 3}
-  - {fileID: 21300000, guid: 339d62a9dd97a494ea8f3edfbe344a1c, type: 3}
-  - {fileID: 21300000, guid: 300fac1be6c31e5459ec494aa5aa80fc, type: 3}
---- !u!114 &1767929129642330611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494125429915573552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95cd57f2c5c2d7e42a02d92457c5cd52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSizeX: 75
-  maxSizeY: 45
-  offset: 1
-  maxSpeed: 5
-  player: {fileID: 4590229781450480108}
-  target: {fileID: 0}
-  gridNode: {fileID: 0}
-  gridRed: {fileID: 0}
-  gridBlack: {fileID: 0}
-  Collidables:
-    serializedVersion: 2
-    m_Bits: 64
-  Costmap:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!114 &3511057212064826761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494125429915573552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2c24abd11865914587b3c28549a4858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
-  switchDistance: 0
-  speedMultiplier: 1
---- !u!114 &5162261944542736506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494125429915573552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a217d396903c3bf488728a675c1a1242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Collidables:
-    serializedVersion: 2
-    m_Bits: 64
-  antiColliderStrength: 10
-  raycastDistance: 0.75
 --- !u!70 &763115144191900465
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,7 +95,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -207,3 +122,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5687980203171323653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494125429915573552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803d47800def54a4ea92a672728d4063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 6a845cf4003adc94c9a3ec0c506fd434, type: 3}
+  - {fileID: 21300000, guid: 1a98e5cd651b9f74dabdce0e959bcf41, type: 3}
+  - {fileID: 21300000, guid: 5b958c15253788842bc6bb87c38bcc5d, type: 3}
+  - {fileID: 21300000, guid: 4e7783ad83fd73b46b0fae6f6d1a37fd, type: 3}
+  - {fileID: 21300000, guid: df533dbd405660a408bd3278d2672320, type: 3}
+  - {fileID: 21300000, guid: b80c9f63edea3dc4cac9c27e13fb40e7, type: 3}
+  - {fileID: 21300000, guid: 339d62a9dd97a494ea8f3edfbe344a1c, type: 3}
+  - {fileID: 21300000, guid: 300fac1be6c31e5459ec494aa5aa80fc, type: 3}

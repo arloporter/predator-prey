@@ -27,7 +27,7 @@ public class WanderingBehaviour : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         // Instantiate early movement within the boid
-        rb.velocity = RandomEarlyMovement(-startVelocitySpeedAvg, startVelocitySpeedAvg);
+        rb.velocity = RandomEarlyMovement(startVelocitySpeedAvg, startVelocitySpeedAvg);
     }
 
     // Function that Instantiates early movement, until entering a boid group and inheriting velocity from them.

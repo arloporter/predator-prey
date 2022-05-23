@@ -1,0 +1,61 @@
+Notes for report:
+V0.1:
+Key Settings:
+	> 4 UIC in 4 corners of the map
+	> No ACA
+	> Fast movement speed(25 Units)
+	> 8 Directional Movement + Stand still
+	> Static middle spawn (X:22, Y: 15)
+	> Ray Perception Implementation, 180 Degrees, 50 Rays, 30 Ray Length
+	> Max reward: 4(4 UIC)
+Notes:
+	> Original test, utilised a lot of what was taught in Week 9
+	> Once a lot of little bugs were fixed, the agent was learning
+	> Gravitated to one side(Leftwards) in first no bugs test
+	> On average will get 1 or 2 civillians
+	> This is potentially as a result of the large distance between the left and right groups of civillian rewards
+	> Once it acquires two rewards will just wander around until episode end
+
+V0.2
+Key Settings Changes from V0.1:
+	> 8 UIC spread about, still in a square shape
+	> Slowed Movement Speed(20 Units)
+	> Variable Middle spawn (Between X(17,27) and Y(10,20)
+	> Max potential reward : 8(8 UIC)
+Notes:
+	> Similar start to v0.1, early gravitatiation to one direction(Left again)
+	> Eventually though, consistently caught all 8 within 10 minutes of training and 200 steps
+	> More civillians allowed the agent to chain together and reduce the weakness of longer range sensor data.
+	> Some variation between full clears was observed, hinting that sensor data came into play to allow flexible adjustment, instead of a fixed path.
+	> Opted to reimplement more functionality than settle
+	
+V0.3
+Key Settings Changes from V0.2:
+	> Addition of ACA(No movement) 2 Added closer than UIC
+	> Code adjustments and sensor to account for ACA Addition
+	> Further Speed decrease (15 Units)
+	> Max Steps per episode doubled 2000->4000(In testing, it's more 200->400, i'm not sure but it's double time)
+Notes:
+	> Similar start to v0.2, Interestingly for a bit of time, the ML Agent would camp in the corner being scared of the ACA
+	> Eventually it learned to do a path similar to v0.2 while avoiding the ACAs
+	> It wouldn't aggressiely avoid ACAs but that's okay, they only gave a -0.25f rewards and would despawn
+	> Other than that, not much changed between behaviour since low punishment ACAs aren't particularly detremental to the MLAgent
+	> As a result of similar learning, it followed a similar learning policy akin to V0.2, but slower, took roughly 20000 more steps to reach max reward.
+
+V0.4
+Key Settings Changes from V0.3:
+	> Basic Movement/Obstacle avoidance Implemented for UIC to add random movement
+	> The units move a random x and y velocity between -1 and 1
+	> They have basic Obstacle Avoidance(A1 Implementation that uses raycasts in 8 directions to push back)
+	> No Flocking currently implemented
+	> UIC Colliders changed from triggers to normal(They collide with each other and can throttle velocity/ Hit the wall with enough force)
+	> More Units added, 2 more UIC(10 UIC Total), 2 more ACA(4 ACA Total)
+	> ACA remains static. It's collider is kept as a trigger(Bug fixing resulted in them getting bounced around when I intended to keep them still for this version)
+Notes:
+	> Interestingly, with the added rng element of random movement/bumping on the UIC on episode start, the agent not only was able to learn, but learned quicker than v0.3
+	> This is probably due to the sensors being a bit more powerful and the units trending towards middle and closer to each other whenever they coincidentally bump
+	> Mean Scores of 7-9 were recorded as early as 6 minutes into training.
+	> The MLAgent might not be respecting the ACAs as much as it should though, still barreling through them when in the real game, ACA capture is gameover. Although for testing this is completely okay, and great results.
+	> Although I ended the training earlier than v0.3 I felt that only minor improvements will occur with the nature of rng, possibly a mistake, not sure.
+
+	

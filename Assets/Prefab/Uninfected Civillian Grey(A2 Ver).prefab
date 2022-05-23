@@ -12,10 +12,7 @@ GameObject:
   - component: {fileID: 2195576285467717877}
   - component: {fileID: 2195576285467717832}
   - component: {fileID: 1640315821953318832}
-  - component: {fileID: 8561116635348754663}
-  - component: {fileID: 6313825552145079821}
-  - component: {fileID: 2195576285467717833}
-  - component: {fileID: 5170881827610029695}
+  - component: {fileID: -5691398667164297955}
   m_Layer: 8
   m_Name: Uninfected Civillian Grey(A2 Ver)
   m_TagString: uninfectedCivillian
@@ -119,27 +116,25 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.25, y: 0.6}
   m_Direction: 0
---- !u!114 &8561116635348754663
+--- !u!114 &-5691398667164297955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2195576285467717876}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444b3b6e69b11b947983a72d6ca44992, type: 3}
+  m_Script: {fileID: 11500000, guid: c650523e3b7a52e4aaa01d891c4b4bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerSightDistance: 4
-  bufferDistance: 6
+  startVelocitySpeedAvg: 1
   sprites:
   - {fileID: 21300000, guid: fcb4051174aa8a24c8226c5d1102a770, type: 3}
   - {fileID: 21300000, guid: 25ccdd39b37f2cb48934800a253fe794, type: 3}
@@ -149,56 +144,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d32c89670795c9a49bc8beeb22a02e53, type: 3}
   - {fileID: 21300000, guid: 70ece8a703ab05340962ff8f52d5cdfa, type: 3}
   - {fileID: 21300000, guid: f9df179fb81072340b8be12f9588589a, type: 3}
---- !u!114 &6313825552145079821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2195576285467717876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eeac9b4362422043a5698c9bc290efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRadius: 4
-  startVelocitySpeedAvg: 3
-  cohesionEnabled: 1
-  cohesionStrength: 3
-  seperationEnabled: 1
-  seperationStrength: 1.5
-  alignmentEnabled: 1
-  alignmentDelay: 10
---- !u!114 &2195576285467717833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2195576285467717876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fee3f14baeeeb44f91b0c4116c6f0d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVelocity: 1
-  velocity: {x: 0, y: 0, z: 0}
-  player: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
-  speedMultiplier: 0.1
---- !u!114 &5170881827610029695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2195576285467717876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a217d396903c3bf488728a675c1a1242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Collidables:
-    serializedVersion: 2
-    m_Bits: 64
-  antiColliderStrength: 2
-  raycastDistance: 1
