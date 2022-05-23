@@ -2,7 +2,7 @@
 
     <Config>
       <ExperimentName>PlayerExperiment</ExperimentName>
-      <PopulationSize>15</PopulationSize>
+      <PopulationSize>10</PopulationSize>
       <SpecieCount>10</SpecieCount>
       <Activation>
         <Scheme>Acyclic</Scheme>

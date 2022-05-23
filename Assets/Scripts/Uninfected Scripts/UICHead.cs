@@ -31,6 +31,13 @@ public class UICHead : MonoBehaviour
         players = GameObject.FindGameObjectsWithTag("Player");
 
     }
+    private void OnCollision2DEnter(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Walls"));
+        {
+            this.rig.velocity = -this.rig.velocity*5;
+        }
+    }
     // So, what will be done here is the Vector2 Magnitude calculation, determining the distance between both the player and the script owner(In this case the uninfected Civillian)
     // As the game plays, the code will enable/disable scripts to facilitate with the ease and similarity of a typical FSM.
     // Iterating depending on what is occuring within the game.

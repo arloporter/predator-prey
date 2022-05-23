@@ -6,11 +6,12 @@ TagManager:
   tags:
   - uninfectedCivillian
   - AntiCovidAgent
+  - Walls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Civilians
   - Water
   - UI
   - Collidables

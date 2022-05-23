@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class WanderingBehaviour : MonoBehaviour
 {
     // Detection radius to detect nearby boids
@@ -25,6 +26,7 @@ public class WanderingBehaviour : MonoBehaviour
 
     void Start()
     {
+        //Debug.unityLogger.logEnabled = false;
         rb = GetComponent<Rigidbody2D>();
         // Instantiate early movement within the boid
         rb.velocity = RandomEarlyMovement(-startVelocitySpeedAvg, startVelocitySpeedAvg);
@@ -42,7 +44,7 @@ public class WanderingBehaviour : MonoBehaviour
     void nearbyCivillians(Vector2 centre, float radius)
     {
         // Get all nearby colliders, includes itself... for some reason
-        Collider2D[] hitcolliders = Physics2D.OverlapCircleAll(centre, radius, 1);
+        Collider2D[] hitcolliders = Physics2D.OverlapCircleAll(centre, radius, 3);
 
         // Instantiate checking how many nearby colliders/uninfected to go through the respective loops to develop the array of colliders that ARE boids.
         int nearbyColliders = 0;
