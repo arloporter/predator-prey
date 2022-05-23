@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2195576285467717832}
   - component: {fileID: 1640315821953318832}
   - component: {fileID: -5691398667164297955}
+  - component: {fileID: 276575620585849557}
+  - component: {fileID: 1112481878130767674}
   m_Layer: 8
   m_Name: Uninfected Civillian Grey(A2 Ver)
   m_TagString: uninfectedCivillian
@@ -144,3 +146,39 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d32c89670795c9a49bc8beeb22a02e53, type: 3}
   - {fileID: 21300000, guid: 70ece8a703ab05340962ff8f52d5cdfa, type: 3}
   - {fileID: 21300000, guid: f9df179fb81072340b8be12f9588589a, type: 3}
+--- !u!114 &276575620585849557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195576285467717876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7373569bfe4ac43b95a65eea4ea69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRadius: 2
+  cohesionEnabled: 1
+  cohesionStrength: 1
+  seperationEnabled: 1
+  seperationStrength: 1
+  alignmentEnabled: 1
+  alignmentDelay: 1
+--- !u!114 &1112481878130767674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195576285467717876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a217d396903c3bf488728a675c1a1242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collidables:
+    serializedVersion: 2
+    m_Bits: 64
+  antiColliderStrength: 1
+  raycastDistance: 2
