@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4625080134754990487}
   - component: {fileID: 1219731091315468597}
   - component: {fileID: 8040185577761947160}
+  - component: {fileID: 6817002685259202112}
   m_Layer: 0
   m_Name: Covid Spreader(ML Agent)
   m_TagString: CovidSpreader
@@ -166,6 +167,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
   - {fileID: 21300000, guid: 8dcb54d676a965a4ebb12b2ff97b19c4, type: 3}
   uninfectedCivillianParent: {fileID: 0}
+  antiCovidAgentParent: {fileID: 0}
 --- !u!114 &5054099818901535049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,4 +259,28 @@ MonoBehaviour:
     m_Bits: 512
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &6817002685259202112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220344892018603464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67c7e722ba14acd9153bb4488bff6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensorObstacles
+  m_DetectableTags: []
+  m_RaysPerDirection: 16
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 0.5
+  m_RayLength: 3
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ObservationStacks: 1
+  rayHitColor: {r: 0.97573733, g: 1, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}

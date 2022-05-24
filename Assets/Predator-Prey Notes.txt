@@ -58,4 +58,25 @@ Notes:
 	> The MLAgent might not be respecting the ACAs as much as it should though, still barreling through them when in the real game, ACA capture is gameover. Although for testing this is completely okay, and great results.
 	> Although I ended the training earlier than v0.3 I felt that only minor improvements will occur with the nature of rng, possibly a mistake, not sure.
 
-	
+V0.5
+Key Settings Changes from V0.4:
+	> First Iteration of readding Obstacles, only added buildings with original spots from A1
+	> Minor movement of ACA to accomodate for Building, Still static
+	> Covid Spreader can see obstacles at a range of 5, 16 Raycast Sensors, 180 degree view. No Punishments or Rewards applied. (Not sure how to handle this tbh)
+	> Tightened up Spawn position so the MLAgent doesn't spawn in a building.
+Notes:
+	> Surprisingly, worked well, not sure if it's a natural part of ML or more a consequence of too few in-map obstacles, or the MLAgent utilising the Collidables sensor
+	> Only learned a little slower than its v0.4 no obstacles cousin although it was a bit more random between rounds.
+	> Still not respecting ACAs
+
+v0.6
+Key Settings Changes from V0.5:
+	> Addition of props alongside buildings with efforts to integrate obstacles.
+	> Significant Adjustment of both UIC and ACA spawns to accomodate for changes
+	> ACA Is still static but now is slightly more punishing to the MLAgent for getting caught (From -0.25 to -0.5)
+Notes:
+	> Unsurprisingly, training took longer than v0.5
+	> This is probably as a result of the fact that the MLAgent just can't run straight through obstacles and thus caught less on average per episode
+	> Despite this, and despite the higher punishments, the training was somewhat successful.
+	> ACA is slightly more respected
+	> Potentially too many obstacles, MLAGent got stuck sometimes. Might iterate more on v0.6

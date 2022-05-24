@@ -63,7 +63,7 @@ public class CovidSpreaderAgent : Agent
 
     public void HandleHitAntiCovidAgent()
     {
-        AddReward(-0.25f);
+        AddReward(-0.5f);
         Debug.Log("Got Caught");
     }
 
@@ -72,7 +72,7 @@ public class CovidSpreaderAgent : Agent
         uninfectedCivilliansCaught = 0;
 
         // To be used for randomised spawning of the Covid Spreader
-        float randomXPos = Random.Range(17, 27);
+        float randomXPos = Random.Range(20, 24);
         float randomYPos = Random.Range(10, 20);
 
         transform.position = new Vector3 (randomXPos, randomYPos, 0.0f);

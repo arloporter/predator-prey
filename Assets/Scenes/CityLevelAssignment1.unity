@@ -5958,7 +5958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &409893111
 Transform:
   m_ObjectHideFlags: 0
@@ -21220,52 +21220,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 824346779622391638, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
   m_PrefabInstance: {fileID: 824346778853650443}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1533397784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533397783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f72a04f0a43ac9498dfe8e93997327c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 50000
---- !u!114 &1533397785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533397783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BrainParameters:
-    VectorObservationSize: 12
-    NumStackedVectorObservations: 2
-    m_ActionSpec:
-      m_NumContinuousActions: 8
-      BranchSizes: 
-    VectorActionSize: 08000000
-    VectorActionDescriptions: []
-    VectorActionSpaceType: 1
-    hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
-  m_InferenceDevice: 0
-  m_BehaviorType: 0
-  m_BehaviorName: My Behavior
-  TeamId: 0
-  m_UseChildSensors: 1
-  m_UseChildActuators: 1
-  m_ObservableAttributeHandling: 0
 --- !u!212 &1533397788 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 824346779622391637, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
@@ -26515,7 +26469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1896306984
 Transform:
   m_ObjectHideFlags: 0
@@ -29473,11 +29427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391636, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29529,7 +29483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: moveSpeed
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 824346779622391656, guid: ddfc7035196ffa240a46b8b44dd621d9, type: 3}
       propertyPath: spriteAnimation
