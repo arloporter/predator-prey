@@ -80,3 +80,13 @@ Notes:
 	> Despite this, and despite the higher punishments, the training was somewhat successful.
 	> ACA is slightly more respected
 	> Potentially too many obstacles, MLAGent got stuck sometimes. Might iterate more on v0.6
+v0.6.1
+Key Settings Changes from v0.6:
+	> Focus on iterating on current features.
+	> Removal of some props, Movement of others
+	> Max Steps increased to 5000
+Notes:
+	> I think the Changes were very well placed, extra steps allowed the MLAgent to learn faster with more time to navigate the space
+	> MLAgent got less stuck while still keeping a detailed playspace that looks and makes sense
+	> MLAgent while it respects ACAs more, can still get quite scared in a corner near the end of an episode if no UICs are nearby
+	

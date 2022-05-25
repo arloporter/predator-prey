@@ -1,0 +1,4 @@
+conda activate predatorprey
+cd C:\Users\Duggy\Documents\GitHub\predator-prey
+mlagents-learn config/ppo/covidspreaderbehaviour.yaml --run-id=testrun
+tensorboard --logdir results --port 5004
