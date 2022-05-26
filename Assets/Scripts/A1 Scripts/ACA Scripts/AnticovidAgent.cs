@@ -267,61 +267,37 @@ public class AnticovidAgent : MonoBehaviour
         }
         
     }
-    
+
     public void reconstructPath(Node startNode, Node targetNode)
     {
-        finalPath = new List<Vector2>();
-        finalPath.Add(new Vector2(targetNode.X, targetNode.Y));
+        this.finalPath = new List<Vector2>();
+        this.finalPath.Add(new Vector2(targetNode.X, targetNode.Y));
         while (targetNode.parent != startNode)
         {
-            
-            finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
+
+            this.finalPath.Add(new Vector2(targetNode.parent.X, targetNode.parent.Y));
             // Destroy(Instantiate(this.gridRed, new Vector2(targetNode.X, targetNode.Y), Quaternion.identity), 0.5f);
             targetNode = targetNode.parent;
         }
-        finalPath.Reverse();
-        this.finalPath = finalPath;
-
+        this.finalPath.Reverse();
     }
     void Awake()
     {
         this.initialise();
         AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
     }
-
     // Update is called once per frame
     void FixedUpdate()
     {
         this.count += 1;
         float distanceCheck = Vector2.Distance(this.player.transform.position, this.target.transform.position);
-        if (this.count % 20 == 0 && distanceCheck > 0.2f)
+        if (this.count % 20 == 0 && distanceCheck > 2.0f)
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
-
-        if (this.finalPath.Count > 0)
+        if (this.finalPath.Count >= 1)
         {
-            List<Vector2> smoothedPath = new List<Vector2>();
-            for(int i = 1; i < this.finalPath.Count-1; i++) {
-                Vector2 circlecast = (Vector2)this.player.transform.position - this.finalPath[i];
-                float distance = (float) Math.Sqrt(Math.Pow((this.player.transform.position.x - this.finalPath[i].x), 2) + Math.Pow((this.player.transform.position.y - this.finalPath[i].y), 2));
-                RaycastHit2D hit = Physics2D.CircleCast(this.player.transform.position, 0.5f, circlecast, distance, this.Collidables);
-                if (hit.collider != null)
-                {
-                    smoothedPath.Add(this.finalPath[i]);
-                } else if (hit.collider == null)
-                {
-                    this.finalPath.RemoveAt(i);
-                   
-
-                    
-                }
-            }
-            Vector2 nextWaypoint = finalPath[0];
-            if (smoothedPath.Count > 0)
-            {
-                nextWaypoint = smoothedPath[0];
-            } 
+            Vector2 nextWaypoint = this.finalPath[0];
             Vector2 desiredVel = nextWaypoint - (Vector2)this.player.transform.position;
             float dist = desiredVel.magnitude;
             desiredVel.Normalize();
@@ -329,19 +305,9 @@ public class AnticovidAgent : MonoBehaviour
             Vector2 force = desiredVel - this.player.velocity;
             Vector2 velocity = this.player.velocity;
             this.player.AddForce(force);
-
             //Destroy(Instantiate(this.gridRed, new Vector2(nextWaypoint.x, nextWaypoint.y), Quaternion.identity), 0.5f);
-            if (dist < 0.3f && smoothedPath.Count > 0)
-            {
-                smoothedPath.RemoveAt(0);
-            } else if (dist < 0.3f && smoothedPath.Count == 0)
-            {
-                finalPath.RemoveAt(0);
-            }
-           
 
-
-
+            this.finalPath.RemoveAt(0);
         }
 
     }

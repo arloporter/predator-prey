@@ -12,14 +12,15 @@ public class CovidSpreaderHead : MonoBehaviour
             other.gameObject.SetActive(false);
             this.gameObject.GetComponent<CovidSpreaderAgent>().HandleCollectionUninfectedCivillian();
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
         if (other.gameObject.tag == "AntiCovidAgent")
         {
             other.gameObject.SetActive(false);
             this.gameObject.GetComponent<CovidSpreaderAgent>().HandleHitAntiCovidAgent();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
     }
 }
