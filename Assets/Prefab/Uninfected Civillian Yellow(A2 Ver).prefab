@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7154516366119153701}
   - component: {fileID: 7778315556971216733}
   - component: {fileID: 8626673765946873368}
-  - component: {fileID: -8395825250946627984}
   - component: {fileID: 5012593729407764648}
   m_Layer: 8
   m_Name: Uninfected Civillian Yellow(A2 Ver)
@@ -146,25 +145,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2028573be0225234dac77f474df418ae, type: 3}
   - {fileID: 21300000, guid: f01e66ea3a9b1c244ac0dffe651f5350, type: 3}
   - {fileID: 21300000, guid: 3bfb8761a557a2b4fb9b2a5e6d69bb4a, type: 3}
---- !u!114 &-8395825250946627984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7154516366119153689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7373569bfe4ac43b95a65eea4ea69e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRadius: 2
-  cohesionEnabled: 1
-  cohesionStrength: 1
-  seperationEnabled: 1
-  seperationStrength: 1
-  alignmentEnabled: 1
-  alignmentDelay: 1
 --- !u!114 &5012593729407764648
 MonoBehaviour:
   m_ObjectHideFlags: 0

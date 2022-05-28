@@ -80,13 +80,51 @@ Notes:
 	> Despite this, and despite the higher punishments, the training was somewhat successful.
 	> ACA is slightly more respected
 	> Potentially too many obstacles, MLAGent got stuck sometimes. Might iterate more on v0.6
+	
 v0.6.1
 Key Settings Changes from v0.6:
 	> Focus on iterating on current features.
 	> Removal of some props, Movement of others
 	> Max Steps increased to 5000
 Notes:
-	> I think the Changes were very well placed, extra steps allowed the MLAgent to learn faster with more time to navigate the space
+	> I think the Changes were very well placed, extra steps allowed the MLAgent to learn faster with more time to navigate the space than v0.6
 	> MLAgent got less stuck while still keeping a detailed playspace that looks and makes sense
 	> MLAgent while it respects ACAs more, can still get quite scared in a corner near the end of an episode if no UICs are nearby
+	> The MLAgent interestingly was a lot more consistent than previous versions within less steps despite more steps per episode
+	> Nevertheless, still quite volatile per episode, this is probably due to the rng episodic nature.
+	> Despite all this, the experiment was much stronger and we can now add more mechanics since the ML-Agent is still quite successful with the current featureset.
+	> Will Consider longer training sessions 100-150k+ from now on to really nail down newer features.
+	> Still Debating if a return to A1 Size or A1 Flocking/Fleeing is neccessary, the UIC running around randomly is kinda endearing :).
+	
+v0.7
+Key Settings Changes from V0.6.1:
+	> Removed two ACAs(From 4 to 2), Increased punishment (-0.5 to -0.75)
+	> ACAs now use Arlo's AStar Pathfinding and try to catch the MLAgent, Their current speed is 5
+	> Implemented neccesary changes to Arlo's Pathfinding(Cost Maps) to have it work on a smaller/different map
+	> Max Steps increased to 6000
+Notes:
+	> This Training ran for 200k steps, significantly more than in the past
+	> I think it consistently got maxish reward early akin to the previous version
+	> Very satisfied with the results, despite the slightly higher negative potential punishment
+	> Higher steps was pretty handy, once again but did feel a bit unneccessary towards the end
+	> MLAgent learned very unique behaviour in dealing with the now mobile hostile ACAs
+	> Sometimes correctly manipulated their pathfinding behaviour, even in some cases utilizing flaws in the pathfinding that even I as a human didn't figure out until observing the MLAgent play
+	> Wasn't extremely consistent at avoidance, but I'd be lying if I didn't say they were doing a pretty good job towards the end
+	> Despite the smaller map, the weaknesses of raysensor is very clear when it comes to max range detection though the low prio of far UICs could be a factor instead.
+	> Probably gonna be the last feature implementation, Size seems somewhat unneccessary, readding flocking/fleeing to UIC could cause more issues than them running around headlessly, and it's kinda endearing.
+	> ACAs seeking is a bit broken as well and the pathfinding works well enough in most cases.
+	> An existing thought going through testing, is what is the proper way to test what should be a player actually chasing the MLAgent, the MLagent feels like it's learning habits that work well for Arlo's pathfinding, but not for a ACA Player which could cause issue.
+	> Benefit is now that ACAs don't have a fixed position, the Covid Spreader isn't learning deadzones, now it can stall in the middle :D
+	
+v0.8
+Key Settings Changes from V0.7:
+	> Increased amount of UIC from 10 to 12(Max reward 12), Increased ACA Punishment from -0.75 to 1 to compensate for new max reward threshold and increased defensive movement
+	> Decreased ACA Speed from 5 to 4 to better simulate intended player speed
+	> Removed collision between UICs and ACAs and themselves(They still collide with walls and the Covid Spreader)
+	> Removed a couple props, barriers at (5, 15)ish. Slight adjustments to episode civ spawn
+Notes:
+	> Not really different from how v0.7 went tbh
+	> Despite wide variations and a slight increase in max rewards, it only took a bit slower to get to semi-consistent results.
+	> Unfortunately, I think the limit of sensor training and features wanting to be added has been reached and even a late night training session will only offer marginal improvements over this kind of testing.
+	> TBH I kind of want to change the settings of the yaml but the current settings are pretty good for getting desired results.
 	

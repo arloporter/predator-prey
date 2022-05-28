@@ -19,10 +19,10 @@ public class UICHeadA2 : MonoBehaviour
         // rig.velocity = RandomEarlyMovement(-startVelocitySpeedAvg, startVelocitySpeedAvg);
     }
 
-    public void RandomEarlyMovement(float min, float max)
+    public void RandomEarlyMovement()
     {
-        float x = Random.Range(min, max);
-        float y = Random.Range(min, max);
+        float x = Random.Range(-startVelocitySpeedAvg, startVelocitySpeedAvg);
+        float y = Random.Range(-startVelocitySpeedAvg, startVelocitySpeedAvg);
         rig.velocity = new Vector2(x, y);
     }
 

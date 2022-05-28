@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 370778164770702577}
   - component: {fileID: 981387476768181129}
   - component: {fileID: -6446973599361823930}
-  - component: {fileID: 1102439819270948783}
   - component: {fileID: 5749968051557551308}
   m_Layer: 8
   m_Name: Uninfected Civillian Green(A2 Ver)
@@ -146,25 +145,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6473f3039cb81814e8dd7c63894d21ee, type: 3}
   - {fileID: 21300000, guid: 32f812045f9cc92448344cf51a4c4d7c, type: 3}
   - {fileID: 21300000, guid: 7f1c0d70e33e83c4686fe19164a69126, type: 3}
---- !u!114 &1102439819270948783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370778164770702541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7373569bfe4ac43b95a65eea4ea69e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRadius: 2
-  cohesionEnabled: 1
-  cohesionStrength: 1
-  seperationEnabled: 1
-  seperationStrength: 1
-  alignmentEnabled: 1
-  alignmentDelay: 1
 --- !u!114 &5749968051557551308
 MonoBehaviour:
   m_ObjectHideFlags: 0

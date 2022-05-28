@@ -63,7 +63,7 @@ public class CovidSpreaderAgent : Agent
 
     public void HandleHitAntiCovidAgent()
     {
-        AddReward(-0.5f);
+        AddReward(-1f);
         Debug.Log("Got Caught");
     }
 
@@ -83,7 +83,7 @@ public class CovidSpreaderAgent : Agent
             uninfected.gameObject.SetActive(true);
             uninfected.position = uninfectedCivillianTransformArray[uninfectedPositionResetCounter];
             uninfectedPositionResetCounter++;
-            uninfected.GetComponent<UICHeadA2>().RandomEarlyMovement(-1f, 1f);
+            uninfected.GetComponent<UICHeadA2>().RandomEarlyMovement();
         }
 
         int antiCovidAgentPositionResetCounter = 0;
