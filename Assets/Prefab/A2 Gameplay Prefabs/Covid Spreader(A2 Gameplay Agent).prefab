@@ -12,15 +12,14 @@ GameObject:
   - component: {fileID: 7220344892018603467}
   - component: {fileID: 7220344892018603508}
   - component: {fileID: 7220344892018603509}
-  - component: {fileID: 5094617455284971795}
-  - component: {fileID: 7418370469392231916}
+  - component: {fileID: 3790910143723153993}
   - component: {fileID: 5054099818901535049}
   - component: {fileID: 4625080134754990487}
   - component: {fileID: 1219731091315468597}
   - component: {fileID: 8040185577761947160}
   - component: {fileID: 6817002685259202112}
   m_Layer: 0
-  m_Name: Covid Spreader(ML Agent)
+  m_Name: Covid Spreader(A2 Gameplay Agent)
   m_TagString: CovidSpreader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +127,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.33, y: 0.75}
   m_Direction: 0
---- !u!114 &5094617455284971795
+--- !u!114 &3790910143723153993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,26 +136,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7220344892018603464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c03aa25dd6a4a42afee0131290d9e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7418370469392231916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7220344892018603464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1f3a7f2e7cb6da42887f48f92329c6a, type: 3}
+  m_Script: {fileID: 11500000, guid: dcc294110e2aca84caa6b7113b07859a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 2000
-  speedMultiplier: 25
+  MaxStep: 0
+  speedMultiplier: 15
   sprites:
   - {fileID: 21300000, guid: 8c694df29c675e948a96e5f023d19570, type: 3}
   - {fileID: 21300000, guid: 734a535981ca9c94f8c38343b2e2bd7e, type: 3}
@@ -166,8 +153,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 096fff8fb207d1f469acb41f9ab350e3, type: 3}
   - {fileID: 21300000, guid: 498ee011a03213e4c99a9d16e237f9ff, type: 3}
   - {fileID: 21300000, guid: 8dcb54d676a965a4ebb12b2ff97b19c4, type: 3}
-  uninfectedCivillianParent: {fileID: 0}
-  antiCovidAgentParent: {fileID: 0}
 --- !u!114 &5054099818901535049
 MonoBehaviour:
   m_ObjectHideFlags: 0

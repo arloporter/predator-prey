@@ -22,7 +22,7 @@ public class ACAHead : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        pathfindingBehaviour = GetComponent<AnticovidAgent>();
+        pathfindingBehaviour = GetComponent<AnticovidAgentGameplayA2>();
         steeringPursuitBehaviour = GetComponent<ACASteerPursuit>();
         obstacleAvoidance = GetComponent<ObstacleAvoidance2>();
         spriteAnimation = GetComponent<SpriteRenderer>();
