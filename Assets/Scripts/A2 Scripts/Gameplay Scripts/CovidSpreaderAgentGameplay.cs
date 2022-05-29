@@ -19,8 +19,6 @@ public class CovidSpreaderAgentGameplay : Agent
     void Start()
     {
 
-        Application.runInBackground = true;
-
         gameManagerObject = GameObject.Find("GameManager");
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4590229781450480108}
   - component: {fileID: 5687980203171323653}
   - component: {fileID: 5204454155239573260}
+  - component: {fileID: 2063986268762718202}
   m_Layer: 9
   m_Name: Anticovid Agent(A2 Ver)
   m_TagString: AntiCovidAgent
@@ -159,7 +160,7 @@ MonoBehaviour:
   maxSizeX: 70
   maxSizeY: 45
   offset: 1
-  maxSpeed: 4
+  maxSpeed: 5
   player: {fileID: 4590229781450480108}
   target: {fileID: 0}
   gridNode: {fileID: 0}
@@ -171,3 +172,20 @@ MonoBehaviour:
   Costmap:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &2063986268762718202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494125429915573552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a217d396903c3bf488728a675c1a1242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collidables:
+    serializedVersion: 2
+    m_Bits: 64
+  antiColliderStrength: 0.5
+  raycastDistance: 1

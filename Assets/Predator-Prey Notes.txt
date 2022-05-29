@@ -127,4 +127,21 @@ Notes:
 	> Despite wide variations and a slight increase in max rewards, it only took a bit slower to get to semi-consistent results.
 	> Unfortunately, I think the limit of sensor training and features wanting to be added has been reached and even a late night training session will only offer marginal improvements over this kind of testing.
 	> TBH I kind of want to change the settings of the yaml but the current settings are pretty good for getting desired results.
+v0.9
+Key Settings Changes from v0.8:
+	> Potential bugfix for hanging ACAs when the MLAgent hugs near walls (Mostly (0, 0))
+	> Reincreased ACA speed from 4 to 5
+	> Gave ACAs very light obstacle avoidance (RC Length 1, Collision Strength 0.5)
+Notes:
+	>
+	
+v1.0
+Key Settings Changes from v0.9:
+	> Complete rework of the way training is done, if not effective, will be used for actual gameplay.
+	> Episodes last infinitely, end when the ACA catches the Covid Spreader MLAgent
+	> Random spawning for all entities at the start of the game and during the game when Covid Spreader catches UICs
+	> As a result Theoretical episode length and reward score is infinite.
+	> On capture, complete wipe of all entities and restart the game and episode.
+	> Outside of this training change, most settings for the entities themselves are roughly the same.
+	> Functions moved around but should be effectively the same game, just different training method that doesn't end and contain respawning UICs.
 	

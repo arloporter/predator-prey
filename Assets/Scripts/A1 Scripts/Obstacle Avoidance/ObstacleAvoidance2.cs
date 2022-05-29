@@ -6,8 +6,8 @@ public class ObstacleAvoidance2 : MonoBehaviour
 {
     // Initialise
     public LayerMask Collidables;
-    public float antiColliderStrength = 1;
-    public float raycastDistance = 2;
+    public float antiColliderStrength = 1f;
+    public float raycastDistance = 2f;
 
     private Rigidbody2D player;
 
@@ -30,7 +30,7 @@ public class ObstacleAvoidance2 : MonoBehaviour
             // colliable tracks the transform position - hit.point(NOT hit.transform)
             Vector2 collidable = (Vector2)player.transform.position - hit.point;
             float distance = collidable.magnitude; 
-            float distancePower = 1 / distance; // Function that makes the distane a multiple rather than a division, linear power increase, the closer to the obstacle, the higher the power(Lower distance)
+            float distancePower = 1.0f / distance; // Function that makes the distane a multiple rather than a division, linear power increase, the closer to the obstacle, the higher the power(Lower distance)
             player.AddForce((collidable.normalized * distancePower) * antiColliderStrength); // Then pushes away from the hit.point transform of the collider
         }
         else if (hit.collider == null)
