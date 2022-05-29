@@ -10,12 +10,12 @@ public class CovidSpreaderHead : MonoBehaviour
         if(other.gameObject.tag == "uninfectedCivillian")
         {
             other.gameObject.SetActive(false);
-            this.gameObject.GetComponent<CovidSpreaderAgent>().HandleCollectionUninfectedCivillian();
+            this.gameObject.GetComponent<CovidSpreaderAgentKanika>().HandleCollectionUninfectedCivillian();
         }
         if (other.gameObject.tag == "AntiCovidAgent")
         {
             other.gameObject.SetActive(false);
-            this.gameObject.GetComponent<CovidSpreaderAgent>().HandleHitAntiCovidAgent();
+            this.gameObject.GetComponent<CovidSpreaderAgentKanika>().HandleHitAntiCovidAgent();
         }
     }
 
