@@ -32,17 +32,12 @@ public class GameManager : MonoBehaviour
         {
             Application.runInBackground = true;
         }
-        StartNormalGame();
+            // StartNormalGame();
     }
 
     public void StartNormalGame()
     {
-        float randomXPos = Random.Range(20, 24);
-        float randomYPos = Random.Range(13, 17);
 
-        Vector3 covidSpreaderSpawn = new Vector3(randomXPos, randomYPos, 0.0f);
-
-        Instantiate(prefabCovidSpreader, covidSpreaderSpawn, Quaternion.identity ,covidSpreaderParent);
 
         uninfectedCivillianSpawnTransformArray = new Vector3[uninfectedCivillianSpawnParent.childCount];
         int uninfectedRecordSpawnPositionCounter = 0;
@@ -72,17 +67,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void spawnNewUninfected()
+    public void spawnNewUninfected(Collision2D other)
     {
-        Instantiate(prefabUIC[Random.Range(0, prefabUIC.Length - 1)], uninfectedCivillianSpawnTransformArray[Random.Range(0, uninfectedCivillianSpawnTransformArray.Length - 1)], Quaternion.identity, uninfectedCivillianParent);
+        other.transform.position = uninfectedCivillianSpawnTransformArray[Random.Range(0, uninfectedCivillianSpawnTransformArray.Length - 1)];
+        other.gameObject.GetComponent<UICHeadGameplayA2>().RandomEarlyMovement();
+        // Instantiate(prefabUIC[Random.Range(0, prefabUIC.Length - 1)], uninfectedCivillianSpawnTransformArray[Random.Range(0, uninfectedCivillianSpawnTransformArray.Length - 1)], Quaternion.identity, uninfectedCivillianParent);
+    }
+
+    public void spawnNewAntiCovidAgent(Collision2D other)
+    {
+        other.transform.position = antiCovidAgentSpawnTransformArray[Random.Range(0, antiCovidAgentSpawnTransformArray.Length - 1)];
+        // Instantiate(prefabACA, antiCovidAgentSpawnTransformArray[Random.Range(0, antiCovidAgentSpawnTransformArray.Length - 1)], Quaternion.identity, antiCovidAgentParent);
     }
 
     public void cleanGame()
     {
-        foreach (Transform covidSpreader in covidSpreaderParent)
-        {
-            Destroy(covidSpreader.gameObject);
-        }    
+        //foreach (Transform covidSpreader in covidSpreaderParent)
+        //{
+        //    Destroy(covidSpreader.gameObject);
+        //}    
 
         foreach (Transform uninfectedCivillian in uninfectedCivillianParent)
         {
@@ -92,9 +95,5 @@ public class GameManager : MonoBehaviour
         {
             Destroy(antiCovidAgent.gameObject);
         }
-    }
-    void Update()
-    {
-        
     }
 }

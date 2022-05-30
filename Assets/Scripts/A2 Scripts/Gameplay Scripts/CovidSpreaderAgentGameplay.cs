@@ -7,6 +7,7 @@ using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 public class CovidSpreaderAgentGameplay : Agent
 {
+    public bool trainingMode;
 
     public float speedMultiplier;
 
@@ -23,6 +24,13 @@ public class CovidSpreaderAgentGameplay : Agent
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
+        if (!trainingMode)
+        {
+            MaxStep = 0;
+        }
+
+        Time.timeScale = 20;
+
     }
 
     public void HandleCollectionUninfectedCivillian()
@@ -35,13 +43,17 @@ public class CovidSpreaderAgentGameplay : Agent
     {
         AddReward(-1.0f);
         Debug.Log("Got Caught");
-
-        EndEpisode();
     }
 
     public override void OnEpisodeBegin()
-    {      
-        // This code gets handled in GameManager
+    {
+        gameManagerObject.GetComponent<GameManager>().cleanGame();
+        gameManagerObject.GetComponent<GameManager>().StartNormalGame();
+
+        float randomXPos = Random.Range(20, 24);
+        float randomYPos = Random.Range(13, 17);
+
+        transform.position = new Vector3(randomXPos, randomYPos, 0.0f);
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -135,16 +147,21 @@ public class CovidSpreaderAgentGameplay : Agent
     {
         if (other.gameObject.tag == "uninfectedCivillian")
         {
-            other.gameObject.SetActive(false);
+            // other.gameObject.SetActive(false);
             this.gameObject.GetComponent<CovidSpreaderAgentGameplay>().HandleCollectionUninfectedCivillian();
-            gameManagerObject.GetComponent<GameManager>().spawnNewUninfected();
+            gameManagerObject.GetComponent<GameManager>().spawnNewUninfected(other);
         }
-        if (other.gameObject.tag == "AntiCovidAgent")
+        if (other.gameObject.tag == "AntiCovidAgent" && !trainingMode)
         {
             this.gameObject.GetComponent<CovidSpreaderAgentGameplay>().HandleHitAntiCovidAgent();
-            this.gameObject.SetActive(false);
-            gameManagerObject.GetComponent<GameManager>().cleanGame();
-            gameManagerObject.GetComponent<GameManager>().StartNormalGame();
+            // this.gameObject.SetActive(false);
+            EndEpisode();
+        }
+        if (other.gameObject.tag == "AntiCovidAgent" && trainingMode)
+        {
+            this.gameObject.GetComponent<CovidSpreaderAgentGameplay>().HandleHitAntiCovidAgent();
+            // other.gameObject.SetActive(false);
+            gameManagerObject.GetComponent<GameManager>().spawnNewAntiCovidAgent(other);
         }
     }
 }

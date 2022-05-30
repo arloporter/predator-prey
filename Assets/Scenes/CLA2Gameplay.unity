@@ -2852,6 +2852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39224858ea3bf443b679e66295ff046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableBackgroundRun: 1
   numOfSpawnUIC: 10
   numOfSpawnedACA: 1
   covidSpreaderParent: {fileID: 835997011}
@@ -6471,6 +6472,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02e7d7083266b94449b639dcd4b61797, type: 3}
+--- !u!1001 &298114643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 835997011}
+    m_Modifications:
+    - target: {fileID: 3790910143723153993, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: MaxStep
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790910143723153993, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: trainingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603464, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_Name
+      value: Covid Spreader(A2 Gameplay Agent)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
 --- !u!1 &299904033
 GameObject:
   m_ObjectHideFlags: 0
@@ -16609,7 +16675,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2100895431}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41377,6 +41444,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &2100895431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7220344892018603466, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+  m_PrefabInstance: {fileID: 298114643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2102604805
 GameObject:
   m_ObjectHideFlags: 0
