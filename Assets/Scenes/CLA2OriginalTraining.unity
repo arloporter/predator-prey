@@ -42428,6 +42428,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -6985131336172016827, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
+      propertyPath: MaxStep
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6985131336172016827, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: antiCovidAgentParent
       value: 
       objectReference: {fileID: 561904923}

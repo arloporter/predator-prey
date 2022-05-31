@@ -32,16 +32,9 @@ public class GameManager : MonoBehaviour
         {
             Application.runInBackground = true;
         }
-            // StartNormalGame();
-    }
-
-    public void StartNormalGame()
-    {
-
 
         uninfectedCivillianSpawnTransformArray = new Vector3[uninfectedCivillianSpawnParent.childCount];
         int uninfectedRecordSpawnPositionCounter = 0;
-
         foreach (Transform uninfected in uninfectedCivillianSpawnParent)
         {
             uninfectedCivillianSpawnTransformArray[uninfectedRecordSpawnPositionCounter] = uninfected.position;
@@ -56,6 +49,12 @@ public class GameManager : MonoBehaviour
             antiCovidAgentRecordSpawnPositionCounter++;
         }
 
+        StartNormalGame();
+
+    }
+
+    public void StartNormalGame()
+    {
         for (int spawnUIC = 0; spawnUIC < numOfSpawnUIC; spawnUIC++)
         {
             Instantiate(prefabUIC[Random.Range(0, prefabUIC.Length - 1)], uninfectedCivillianSpawnTransformArray[Random.Range(0, uninfectedCivillianSpawnTransformArray.Length - 1)], Quaternion.identity, uninfectedCivillianParent);
@@ -85,7 +84,7 @@ public class GameManager : MonoBehaviour
         //foreach (Transform covidSpreader in covidSpreaderParent)
         //{
         //    Destroy(covidSpreader.gameObject);
-        //}    
+        //}
 
         foreach (Transform uninfectedCivillian in uninfectedCivillianParent)
         {

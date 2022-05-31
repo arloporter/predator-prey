@@ -159,3 +159,18 @@ Key Settings Changes from v1.0:
 All Major Tests
 	> 1 Mil Step Count
 	> Batch Size increased to 4096
+	
+v0.9Final
+Notes:
+	> A longer range of episodes made it get very very conisistent in finding all the UICs before episode end
+	> Probably the 3rd most effective training method, The training is not very similar to desiried final product of the MLAgent
+	> Despite being 3rd, still pretty freaken good.
+	
+v1.0Final
+Notes:
+	> After it started consistently catching, it didn't really learn much more after awhile
+	> Very volatile between episodes, but that is the nature of intense rng spawns
+	> Probably the 2nd most effective MLAgent, closer to what the game is desired to be but, training can be flawed
+	> Having the episode end on capture can be a bit clunky although maybe it's better?
+	> It's hard to say. Otherwise, seems good, can have scores of up to 100 if rng is correctly
+	> But it doesn't reach gigafull potential, probably won't anyway.

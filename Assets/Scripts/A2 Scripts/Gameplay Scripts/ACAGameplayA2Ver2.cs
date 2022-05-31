@@ -293,19 +293,29 @@ public class ACAGameplayA2Ver2 : MonoBehaviour
     {
         this.initialise();
         AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         this.count += 1;
+
+
         float distanceCheck = Vector2.Distance(this.player.transform.position, this.target.transform.position);
         if (this.count % 20 == 0 && distanceCheck > 2.0f)
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
         }
+        if (this.finalPath == null)
+        {
+            AStarSearch(this.player.transform.position, this.target.transform.position, this.player);
+            Debug.Log("Fixed Path");
+        }
+
         if (this.finalPath.Count >= 1)
         {
+
             Vector2 nextWaypoint = this.finalPath[0];
             Vector2 desiredVel = nextWaypoint - (Vector2)this.player.transform.position;
             float dist = desiredVel.magnitude;

@@ -2,22 +2,40 @@
     "CovidSpreader": {
         "checkpoints": [
             {
-                "steps": 1264,
-                "file_path": "results\\v0.9final\\CovidSpreader\\CovidSpreader-1264.onnx",
-                "reward": 0.0,
-                "creation_time": 1653898303.7048903,
+                "steps": 499984,
+                "file_path": "results\\v0.9final\\CovidSpreader\\CovidSpreader-499984.onnx",
+                "reward": 10.666666666666666,
+                "creation_time": 1653906271.9158218,
                 "auxillary_file_paths": [
-                    "results\\v0.9final\\CovidSpreader\\CovidSpreader-1264.pt"
+                    "results\\v0.9final\\CovidSpreader\\CovidSpreader-499984.pt"
+                ]
+            },
+            {
+                "steps": 999971,
+                "file_path": "results\\v0.9final\\CovidSpreader\\CovidSpreader-999971.onnx",
+                "reward": 11.0,
+                "creation_time": 1653912966.747569,
+                "auxillary_file_paths": [
+                    "results\\v0.9final\\CovidSpreader\\CovidSpreader-999971.pt"
+                ]
+            },
+            {
+                "steps": 1000035,
+                "file_path": "results\\v0.9final\\CovidSpreader\\CovidSpreader-1000035.onnx",
+                "reward": 11.0,
+                "creation_time": 1653912966.8090665,
+                "auxillary_file_paths": [
+                    "results\\v0.9final\\CovidSpreader\\CovidSpreader-1000035.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1264,
+            "steps": 1000035,
             "file_path": "results\\v0.9final\\CovidSpreader.onnx",
-            "reward": 0.0,
-            "creation_time": 1653898303.7048903,
+            "reward": 11.0,
+            "creation_time": 1653912966.8090665,
             "auxillary_file_paths": [
-                "results\\v0.9final\\CovidSpreader\\CovidSpreader-1264.pt"
+                "results\\v0.9final\\CovidSpreader\\CovidSpreader-1000035.pt"
             ]
         }
     },

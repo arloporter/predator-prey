@@ -300,8 +300,11 @@ public class AnticovidAgentGameplayA2 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+
         this.count += 1;
         float distanceCheck = Vector2.Distance(this.player.transform.position, this.target.transform.position);
+
         if (this.count % 20 == 0 && distanceCheck > 2.0f)
         {
             AStarSearch(this.player.transform.position, this.target.transform.position, this.player);

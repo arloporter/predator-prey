@@ -16,6 +16,9 @@ public class CovidSpreaderAgentGameplay : Agent
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
 
+    //private float uninfectedCount;
+    //private float scalingPunishmentCoeff = -0.05f;
+
     private GameObject gameManagerObject;
     void Start()
     {
@@ -23,24 +26,20 @@ public class CovidSpreaderAgentGameplay : Agent
         gameManagerObject = GameObject.Find("GameManager");
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-
-        if (!trainingMode)
-        {
-            MaxStep = 0;
-        }
-
-        Time.timeScale = 20;
-
     }
 
     public void HandleCollectionUninfectedCivillian()
     {
         Debug.Log("Got a Civillian");
+
         AddReward(1.0f);
     }
 
     public void HandleHitAntiCovidAgent()
     {
+        // Idea is to increase punishment when more are caught, this line is unused in v1.1 testing
+        // AddReward(-1.0f + (uninfectedCount * scalingPunishmentCoeff));
+        // This is used in normal gameplay
         AddReward(-1.0f);
         Debug.Log("Got Caught");
     }
@@ -54,6 +53,7 @@ public class CovidSpreaderAgentGameplay : Agent
         float randomYPos = Random.Range(13, 17);
 
         transform.position = new Vector3(randomXPos, randomYPos, 0.0f);
+
     }
 
     public override void CollectObservations(VectorSensor sensor)
