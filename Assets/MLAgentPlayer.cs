@@ -12,30 +12,47 @@ public class MLAgentPlayer : Agent
     public static System.Random rm = new System.Random();
     public int maxIndex;
     private int choice;
-    private double offset = 0.125;
     private double force;
     private int forceMultiplier = 20;
     public GameObject civilianPrefab;
     public int reward;
     private Vector2 initialPosition;
     private Rigidbody2D rb;
-    private List<(float, float)> initialCivlocations = new List<(float, float)>() {(10.88959f, 18.23437f),
-                                                          (9.99f, 16.89f), (11.82f, 15.29f), (13.17f,19.37f),
-                                                           (16.47f, 19.18f), (19.53f, 19.42f), (18.91052f, 17.2753f),
-                                                            (19.80305f, 15.02122f), (17.69f, 13.72f), (18.46f, 12.19f),
-                                                            (19.51f, 10.0f), (17.55f, 9.53f), (14.77218f, 11.67274f),
-                                                            (10.15f, 9.73f), (10.58907f, 12.36152f)};
-
+    public List<Vector2> initialACALocations;
+    public List<Vector2> initialCivLocations;
+    public Transform parent;
+    public Vector2 previousPosition;
     
     void FixedUpdate()
     {
         this.civilianPrefab = GameObject.FindGameObjectWithTag("uninfectedCivillian");
+    }
+    IEnumerator drawLines()
+    {
+        while (true)
+        {
+            if (this.previousPosition != null)
+            {
+                Debug.DrawLine(this.previousPosition, transform.position, Color.red, 99999999.9f, false);
+            }
+            this.previousPosition = transform.position;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
     void Start()
     {
         Debug.unityLogger.logEnabled = true;
         this.rb = GetComponent<Rigidbody2D>();
         initialPosition = this.transform.position;
+        foreach(Transform civilian in parent)
+        {
+            initialCivLocations.Add(civilian.position);
+        }
+        foreach(GameObject ACA in GameObject.FindGameObjectsWithTag("AntiCovidAgent"))
+        {
+            initialACALocations.Add(ACA.transform.position);
+        }
+        //StartCoroutine(drawLines());
     }
   
     void OnCollisionEnter2D(Collision2D col)
@@ -43,18 +60,20 @@ public class MLAgentPlayer : Agent
         if (col.gameObject.CompareTag("uninfectedCivillian"))
         {
             AddReward(1);
-            this.reward += 1;
+            
             col.gameObject.SetActive(false);
-            int spawnX = rm.Next(6, 15);
-            int spawnY = rm.Next(6, 15);
+            int spawn = rm.Next(0, this.initialCivLocations.Count);
             if (GameObject.FindGameObjectsWithTag("uninfectedCivillian").Length < 15)
             {
-                GameObject civilian = Instantiate(this.civilianPrefab, new Vector3(spawnX, spawnY), Quaternion.identity);
+                GameObject civilian = Instantiate(this.civilianPrefab, this.initialCivLocations[spawn], Quaternion.identity);
                 civilian.SetActive(true);
-                civilian.GetComponent<WanderingBehaviour>().enabled = true;
-                civilian.GetComponent<UICHead>().enabled = false;
+                civilian.GetComponent<UICHead>().enabled = true;
                 civilian.GetComponent<CapsuleCollider2D>().enabled = true;
             }
+        }
+        if (col.gameObject.CompareTag("AntiCovidAgent"))
+        {
+            EndEpisode();
         }
     }
     
@@ -80,25 +99,6 @@ public class MLAgentPlayer : Agent
     public override void OnActionReceived(ActionBuffers outputs)
     {
         int outAction = outputs.DiscreteActions[0];
-
-        /*
-        List<float> actions = new List<float>();
-        for(int i = 0; i < 9; i++)
-        {
-            actions.Add(outputs.ContinuousActions[i]);
-        }
-
-        float max = actions.Max();
-        float outAction = 0;
-        for(int i = 0; i < 9; i++)
-        {
-            if(outputs.ContinuousActions[i] == max)
-            {
-                outAction = i;
-            }
-        }
-        */
-        
 
         float force = 10.0f;
         switch (outAction)
@@ -140,12 +140,20 @@ public class MLAgentPlayer : Agent
         SetReward(0);
         transform.position = this.initialPosition;
         transform.rotation = Quaternion.identity;
-        
+
         int i = 0;
         foreach(GameObject civilian in GameObject.FindGameObjectsWithTag("uninfectedCivillian"))
         {
-            civilian.transform.position = new Vector2(this.initialCivlocations[i].Item1, this.initialCivlocations[i].Item2);
+            civilian.transform.position = new Vector2(this.initialCivLocations[i].x, this.initialCivLocations[i].y);
+            civilian.GetComponent<UICHead>().RandomEarlyMovement(-1.0f, 1.0f);
+            StartCoroutine(civilian.GetComponent<UICHead>().EnumMovement(-1.0f, 1.0f));
             i += 1;
+        }
+        int y = 0;
+        foreach(GameObject anticovidagent in GameObject.FindGameObjectsWithTag("AntiCovidAgent"))
+        {
+            anticovidagent.transform.position = new Vector2(this.initialACALocations[y].x, this.initialACALocations[y].y);
+            y += 1;
         }
         
     }

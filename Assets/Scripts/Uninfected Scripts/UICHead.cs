@@ -1,85 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UICHead : MonoBehaviour
 {
-    public GameObject[] players;
-    public float playerSightDistance; // The distance determined as the boid Seeing the player
-    public float bufferDistance; // Designed as a deadzone so that the boid focuses on the Fleeing state rather than flip-flopping at equal numbers
+    public float startVelocitySpeedAvg;
 
     public Sprite[] sprites;
     private SpriteRenderer spriteAnimation;
 
-
     private Rigidbody2D rig;
-
-    // A simple Boolean to make the distance to return to wandering a bit bigger than the base sight radius
-    private bool fleeBuffer = false;
-    // Scripts are put here to be enabled/disabled to facilitate FSM
-    private MonoBehaviour boidsBehaviour;
-    private MonoBehaviour fleeingBehaviour;
-    
 
     private void Start()
     {
         spriteAnimation = GetComponent<SpriteRenderer>();
         rig = GetComponent<Rigidbody2D>();
-        boidsBehaviour = GetComponent<WanderingBehaviour>();
-        fleeingBehaviour = GetComponent<FleeingBehaviour>();
-        players = GameObject.FindGameObjectsWithTag("Player");
 
+        // rig.velocity = RandomEarlyMovement(-startVelocitySpeedAvg, startVelocitySpeedAvg);
     }
-    private void OnCollision2DEnter(Collision2D other)
+
+    public void RandomEarlyMovement(float min, float max)
     {
-        if (other.gameObject.CompareTag("Walls"));
-        {
-            this.rig.velocity = -this.rig.velocity*5;
-        }
+        float x = Random.Range(min, max);
+        float y = Random.Range(min, max);
+        rig.velocity = new Vector2(x, y);
     }
-    // So, what will be done here is the Vector2 Magnitude calculation, determining the distance between both the player and the script owner(In this case the uninfected Civillian)
-    // As the game plays, the code will enable/disable scripts to facilitate with the ease and similarity of a typical FSM.
-    // Iterating depending on what is occuring within the game.
-    private void Update()
+
+    public IEnumerator EnumMovement(float min, float max)
     {
-        // Calculate Distance between player and current gameobject
-        GameObject closestPlayer = null;
-        float minDistance = 9999;
-        foreach(GameObject player in this.players)
-        {
-            float tempDistance = Vector2.Distance(this.transform.position, player.transform.position);
-            if(tempDistance<minDistance)
-            {
-                minDistance = tempDistance;
-                closestPlayer = player;
-            }
+        float x = Random.Range(min, max);
+        float y = Random.Range(min, max);
+        rig.AddForce(new Vector2(x, y));
+        yield return new WaitForSeconds(2);
+    }
 
-        }
-        float distance = Vector2.Distance(closestPlayer.transform.position, this.transform.position);
-        // print(distance); DEBUG
-
-        // In most cases the unInfeceted Civillian will spawn in as Wander, and then as the player is chasing them down and getting closer, the civillian will transfer to Flee
-
-        // FSM Transition Check to Flee
-        if (distance < playerSightDistance && fleeBuffer == false) // FSM Transistion to Flee if the player gets too close
-        {
-            boidsBehaviour.enabled = false;
-            fleeingBehaviour.enabled = true;
-            fleeBuffer = true;
-        }
-        // FSM Transition Check to Wander
-        if (distance > bufferDistance && fleeBuffer == true)
-        {
-            boidsBehaviour.enabled = true;
-            fleeingBehaviour.enabled = false;
-            fleeBuffer = false;
-        }
-        // The FSM state to Die is contained with the PlayerHead Script to facilitate with game scoring, for posterity, the code is a basic collider check and if the other trigger is a uninfectedCivillian
-        // this civillian unit will "Die" as stated within the FSM
-
-
-
+    // Update is called once per frame
+    void Update()
+    {
         Vector2 movement = rig.velocity;
 
         if (movement.x > 0)
