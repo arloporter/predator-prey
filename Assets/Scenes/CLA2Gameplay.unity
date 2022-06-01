@@ -386,10 +386,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835997011}
     m_Modifications:
+    - target: {fileID: 3790910143723153993, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790910143723153993, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
+      propertyPath: trainingMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5054099818901535049, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 6cc9374bc8593b2498e393d6a5c7c626, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: f37d9415fe7edfa40aca6c5c9b81b7f6, type: 3}
     - target: {fileID: 7220344892018603464, guid: cb4f3180f7ba10942a94149fe83583f0, type: 3}
       propertyPath: m_Name
       value: Covid Spreader(A2 Gameplay Agent)
@@ -2915,7 +2923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableBackgroundRun: 1
   numOfSpawnUIC: 10
-  numOfSpawnedACA: 2
+  numOfSpawnedACA: 1
   covidSpreaderParent: {fileID: 835997011}
   uninfectedCivillianParent: {fileID: 1780584446}
   antiCovidAgentParent: {fileID: 2128540183}
