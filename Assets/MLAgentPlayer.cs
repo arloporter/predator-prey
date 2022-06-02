@@ -60,7 +60,6 @@ public class MLAgentPlayer : Agent
         if (col.gameObject.CompareTag("uninfectedCivillian"))
         {
             AddReward(1);
-            
             col.gameObject.SetActive(false);
             int spawn = rm.Next(0, this.initialCivLocations.Count);
             if (GameObject.FindGameObjectsWithTag("uninfectedCivillian").Length < 15)
@@ -73,29 +72,11 @@ public class MLAgentPlayer : Agent
         }
         if (col.gameObject.CompareTag("AntiCovidAgent"))
         {
+            AddReward(-5);
             EndEpisode();
         }
     }
     
-    /*public override void CollectObservations(VectorSensor sensor)
-    {
-       
-        Transform position = this.transform;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position.position, 100.0f, 3);
-
-        if (colliders.Length > 0)
-        {
-            foreach (Collider2D col in colliders)
-            {
-                Vector2 pos = (Vector2)col.transform.position - (Vector2)position.position;
-                float tempDistance = pos.magnitude; // Vector2.Distance(position.position, pos);
-                sensor.AddObservation(tempDistance);
-                sensor.AddObservation(pos.x);
-                sensor.AddObservation(pos.y);
-            }
-        }
-    }
-    */
     public override void OnActionReceived(ActionBuffers outputs)
     {
         int outAction = outputs.DiscreteActions[0];
@@ -155,6 +136,7 @@ public class MLAgentPlayer : Agent
             anticovidagent.transform.position = new Vector2(this.initialACALocations[y].x, this.initialACALocations[y].y);
             y += 1;
         }
+        
         
     }
 }
