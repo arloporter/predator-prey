@@ -133,8 +133,8 @@ Key Settings Changes from v0.8:
 	> Reincreased ACA speed from 4 to 5
 	> Gave ACAs very light obstacle avoidance (RC Length 1, Collision Strength 0.5)
 Notes:
-	>
-	
+	> Same sort of success, the ACAs were more effective, still a bit buggy but the MLAgent was less abusive with exploitation
+	> Not much else to say, Probably going to do a big (1 Million Steps) Training session to get a refined brain. Any changes are minor and the MLAgent is learning effectively with the current settings
 v1.0
 Key Settings Changes from v0.9:
 	> Complete rework of the way training is done, if not effective, will be used for actual gameplay.
@@ -144,4 +144,33 @@ Key Settings Changes from v0.9:
 	> On capture, complete wipe of all entities and restart the game and episode.
 	> Outside of this training change, most settings for the entities themselves are roughly the same.
 	> Functions moved around but should be effectively the same game, just different training method that doesn't end and contain respawning UICs.
+Notes:
+	> Excellent Test, Started off slow but progressed quickly, occasional runs were 60+ captures before being caught in a training session that lasted only 200k Steps
+	> A bit volatile but thats to be expected, certain spawns and manipulation are both beneficial and detrimental
+	> Will probably give this a much longer test (1Mil) but keep the yaml settings, very satisfied with the results
+	> The MLAgent learned very different behaviour since reward was constantly spawning rather than hanging towards the end.
+	> Still was cheeky in manipulating the ACA roaming around but otherwise great success.
+v1.1
+Key Settings Changes from v1.0:
+	> Changed settings to be similar to v0.9, Instead of episode end on capture, episode ends on a fixed step, 10000
+	> Instead of completely set to inactive, the mobs are instead respawned during testing.
+	> The idea is that v1.1 is a more appropriate testing pen than v1.0 and also to get a comparative result between 1.0 training and 1.1 training
 	
+All Major Tests
+	> 1 Mil Step Count
+	> Batch Size increased to 4096
+	
+v0.9Final
+Notes:
+	> A longer range of episodes made it get very very conisistent in finding all the UICs before episode end
+	> Probably the 3rd most effective training method, The training is not very similar to desiried final product of the MLAgent
+	> Despite being 3rd, still pretty freaken good.
+	
+v1.0Final
+Notes:
+	> After it started consistently catching, it didn't really learn much more after awhile
+	> Very volatile between episodes, but that is the nature of intense rng spawns
+	> Probably the 2nd most effective MLAgent, closer to what the game is desired to be but, training can be flawed
+	> Having the episode end on capture can be a bit clunky although maybe it's better?
+	> It's hard to say. Otherwise, seems good, can have scores of up to 100 if rng is correctly
+	> But it doesn't reach gigafull potential, probably won't anyway.

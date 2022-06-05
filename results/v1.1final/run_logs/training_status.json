@@ -1,0 +1,47 @@
+{
+    "CovidSpreader": {
+        "checkpoints": [
+            {
+                "steps": 499960,
+                "file_path": "results\\v1.1final\\CovidSpreader\\CovidSpreader-499960.onnx",
+                "reward": null,
+                "creation_time": 1653983268.1274137,
+                "auxillary_file_paths": [
+                    "results\\v1.1final\\CovidSpreader\\CovidSpreader-499960.pt"
+                ]
+            },
+            {
+                "steps": 999960,
+                "file_path": "results\\v1.1final\\CovidSpreader\\CovidSpreader-999960.onnx",
+                "reward": 70.0,
+                "creation_time": 1653990521.7071588,
+                "auxillary_file_paths": [
+                    "results\\v1.1final\\CovidSpreader\\CovidSpreader-999960.pt"
+                ]
+            },
+            {
+                "steps": 1000064,
+                "file_path": "results\\v1.1final\\CovidSpreader\\CovidSpreader-1000064.onnx",
+                "reward": 76.0,
+                "creation_time": 1653990522.6971579,
+                "auxillary_file_paths": [
+                    "results\\v1.1final\\CovidSpreader\\CovidSpreader-1000064.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000064,
+            "file_path": "results\\v1.1final\\CovidSpreader.onnx",
+            "reward": 76.0,
+            "creation_time": 1653990522.6971579,
+            "auxillary_file_paths": [
+                "results\\v1.1final\\CovidSpreader\\CovidSpreader-1000064.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

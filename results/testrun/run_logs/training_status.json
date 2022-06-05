@@ -2,22 +2,22 @@
     "CovidSpreader": {
         "checkpoints": [
             {
-                "steps": 64,
-                "file_path": "results\\testrun\\CovidSpreader\\CovidSpreader-64.onnx",
-                "reward": null,
-                "creation_time": 1653824388.6172767,
+                "steps": 10087,
+                "file_path": "results\\testrun\\CovidSpreader\\CovidSpreader-10087.onnx",
+                "reward": -9.5,
+                "creation_time": 1653976136.423984,
                 "auxillary_file_paths": [
-                    "results\\testrun\\CovidSpreader\\CovidSpreader-64.pt"
+                    "results\\testrun\\CovidSpreader\\CovidSpreader-10087.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 64,
+            "steps": 10087,
             "file_path": "results\\testrun\\CovidSpreader.onnx",
-            "reward": null,
-            "creation_time": 1653824388.6172767,
+            "reward": -9.5,
+            "creation_time": 1653976136.423984,
             "auxillary_file_paths": [
-                "results\\testrun\\CovidSpreader\\CovidSpreader-64.pt"
+                "results\\testrun\\CovidSpreader\\CovidSpreader-10087.pt"
             ]
         }
     },

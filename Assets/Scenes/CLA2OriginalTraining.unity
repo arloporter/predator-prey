@@ -42428,6 +42428,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -6985131336172016827, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
+      propertyPath: MaxStep
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6985131336172016827, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: antiCovidAgentParent
       value: 
       objectReference: {fileID: 561904923}
@@ -42442,7 +42446,7 @@ PrefabInstance:
     - target: {fileID: 5054099818901535049, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: d86b25e4b1725924d85a8f0f6a878c7f, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: 7c79b577405ff1544ab6e0e0cb1db781, type: 3}
     - target: {fileID: 5054099818901535049, guid: 589b28401f0f2fd48a556266a29e53fb, type: 3}
       propertyPath: m_BehaviorType
       value: 0
